@@ -1,0 +1,1341 @@
+./f491105674.c:/* Thresholds and limits for OMAP4430 MPU temperature sensor */
+./f491105674.c:/* Thresholds and limits for OMAP4460 MPU temperature sensor */
+./f491098698.c: * ADT7316 digital temperature sensor driver supporting ADT7316/7/8 ADT7516/7/9
+./f491098698.c:	dev_info(dev, "%s temperature sensor, ADC and DAC registered.\n",
+./f491098698.c:			" temperature sensor, ADC and DAC driver");
+./f279941906.c:float temperature=0;
+./f279941906.c:		temperature=GetData();
+./f308520938.c:    // ten times temperature in Celsius
+./f308520938.c:    // Western Digital uses this for temperature.
+./f308520938.c:    // max allowed operating temperature of the drive, which 
+./f308520938.c:unsigned char ata_return_temperature_value(const ata_smart_values * data, const ata_vendor_attr_defs & defs)
+./f308520938.c:int ataReadSCTTempHist(ata_device * device, ata_sct_temperature_history_table * tmh,
+./f176514834.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f288794770.c:	/* Set Tmin to 55C, rather than the default 90C. Above this temperature
+./f288794770.c:	 * the fans will start blowing harder as temperature increases
+./f288794770.c:	 * The fans will kick in at 100% if the sensors reach this temperature,
+./f288794770.c:	/* Remote temperature 1 offset (LSB == 0.25C). */
+./f288794770.c:	/* Remote temperature 2 offset (LSB == 0.25C). */
+./f279997170.c:float temperature=0;
+./f279997170.c:        temperature=GetData();
+./f279997170.c:        sendString( temperature );
+./f288801546.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f279997938.c:float temperature=0;
+./f279997938.c:        temperature=GetData();
+./f279997938.c:	sprintf(buffer,"%3u",temperature);
+./f303493154.c:;   Description: Set ADC10 and the integrated temperature sensor to detect
+./f303493154.c:;   temperature gradients. The temperature sensor output voltage is sampled
+./f303493154.c:;   30us for temperature sensor.
+./f285820794.c:/* platform data for the MAX6639 temperature sensor and fan control */
+./f403203298.c:	u32 temperature;
+./f403203298.c:	tg3_ape_scratchpad_read(tp, &temperature, attr->index,
+./f403203298.c:				sizeof(temperature));
+./f403203298.c:	return sprintf(buf, "%u\n", temperature);
+./f457544066.c:	THERMAL_TREND_STABLE, /* temperature is stable */
+./f457544066.c:	THERMAL_TREND_RAISING, /* temperature is raising */
+./f457544066.c:	THERMAL_TREND_DROPPING, /* temperature is dropping */
+./f457544066.c:	int temperature;
+./f457544066.c:	int last_temperature;
+./f360466402.c:float temperature=0;
+./f360466402.c:		temperature=GetData();
+./f344211138.c:#define MDIO_PMA_LASI_TX_LASERTEMPFLT	0x0100	/* Laser temperature fault */
+./f436558946.c:/* Use default factory programmed value for hard/soft temperature limit */
+./f436558946.c: * @chip_temp_threshold: die temperature where device starts limiting charge
+./f436558946.c: * @soft_cold_temp_limit: soft cold temperature limit [%0 - %15] (in degree C),
+./f436558946.c: * @soft_hot_temp_limit: soft hot temperature limit [%40 - %55] (in degree  C),
+./f436558946.c: * @hard_cold_temp_limit: hard cold temperature limit [%-5 - %10] (in degree C),
+./f436558946.c: * @hard_hot_temp_limit: hard hot temperature limit [%50 - %65] (in degree C),
+./f436558946.c: * @soft_temp_limit_compensation: compensation method when soft temperature
+./f436558946.c: *				 current when temperature hits soft limits
+./f436558946.c: * Hard and soft temperature limit values are given as described in the
+./f436558946.c: * factory programmed default will be used. For soft/hard temperature
+./f369372962.c:/* platform data for the DS620 temperature sensor and thermostat */
+./f173164386.c:  unsigned char temperature;
+./f189711098.c:  unsigned char temperature;
+./f270261130.c:  unsigned char temperature[1];
+./f176511738.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f361223714.c: * Notice in the case of cpu voltage and temperature, the default is
+./f288806050.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f308522042.c:  unsigned char temperature;              // last recorded Temperature (in Celsius)
+./f308522042.c:  unsigned char TempPageSupported;        // has log sense temperature page (0xd)
+./f308522042.c:  temperature(0),
+./f308522042.c:     "((temperature-min)" // (1 (2)
+./f308522042.c:     "|(temperature-max)" // (3)
+./f308522042.c:  write_dev_state_line(f, "temperature-min", state.tempmin);
+./f308522042.c:  write_dev_state_line(f, "temperature-max", state.tempmax);
+./f308522042.c:    // current pending sectors or temperature
+./f308522042.c:        && !ata_return_temperature_value(&state.smartval, cfg.attribute_defs)) {
+./f308522042.c:  // if asked for a log page (e.g. temperature) so it is best to
+./f308522042.c:  if (!state.temperature) {
+./f308522042.c:    state.temperature = currtemp;
+./f308522042.c:      if (currtemp != state.temperature)
+./f308522042.c:    if (cfg.tempdiff && (*minchg || *maxchg || abs((int)currtemp - (int)state.temperature) >= cfg.tempdiff)) {
+./f308522042.c:        cfg.name.c_str(), (int)currtemp-(int)state.temperature, currtemp, fmt_temp(state.tempmin, buf), minchg, state.tempmax, maxchg);
+./f308522042.c:      state.temperature = currtemp;
+./f308522042.c:      // check temperature limits
+./f308522042.c:        CheckTemperature(cfg, state, ata_return_temperature_value(&curval, cfg.attribute_defs), 0);
+./f308522042.c:    // check temperature limits
+./f344218562.c:	int last_temperature;
+./f344236370.c:	scsi_warning_specified_temperature_exceeded		= 0x0b01,
+./f491105698.c:/* Thresholds and limits for OMAP5430 MPU temperature sensor */
+./f491105698.c:/* Thresholds and limits for OMAP5430 GPU temperature sensor */
+./f491105698.c:/* Thresholds and limits for OMAP5430 CORE temperature sensor */
+./f470050778.c:/* get temperature (C) */
+./f279997890.c:float temperature=0;
+./f279997890.c:        temperature=GetData();
+./f279997890.c:	sprintf(buffer,"%6.3f",temperature);
+./f293919842.c: * The LM70 is a temperature sensor chip from National Semiconductor (NS).
+./f293919842.c:	 * The "raw" temperature read into rxbuf[] is a 16-bit signed 2's
+./f293919842.c:	 * complement value. Only the MSB 11 bits (1 sign + 10 temperature
+./f304054978.c:  unsigned char temperature;
+./f315292834.c:  unsigned char temperature[1];
+./f293922658.c: * It reports up to two temperatures (its own plus an external one).
+./f293922658.c:/* temperature signed */
+./f293922658.c:/* temperature unsigned */
+./f491098690.c: * API bus driver for ADT7316/7/8 ADT7516/7/9 digital temperature
+./f491098690.c:			"ADT7516/7/9 digital temperature sensor, ADC and DAC");
+./f293920930.c: * It reports up to three temperatures (its own plus up to two external ones).
+./f288801938.c:	/*  Remote 1 temperature Tmin     (32C) */
+./f288801938.c:	/* Remote 2 temperature Tmin     (32C) */
+./f288801938.c:	/* remote 1 temperature offset */
+./f176511442.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f293905898.c: * AD7314 digital temperature sensor driver for AD7314, ADT7301 and ADT7302
+./f293905898.c: * AD7314 temperature masks
+./f293905898.c: * ADT7301 and ADT7302 temperature masks
+./f293905898.c:static ssize_t ad7314_show_temperature(struct device *dev,
+./f293905898.c:			  ad7314_show_temperature, NULL, 0);
+./f293905898.c:			" temperature sensor driver");
+./f356913986.c: * for the temperature sensors.
+./f491047602.c: * Notice in the case of cpu voltage and temperature, the default is
+./f288815362.c:struct temperature {
+./f288815362.c:struct temperature temperatures[] = {
+./f288815362.c:	int cpufan_temperature = 0, sysfan_temperature = 0;
+./f288815362.c:	//if (get_option(&cpufan_temperature, "cpufan_temperature") < 0)
+./f288815362.c:	//	cpufan_temperature = FAN_TEMPERATURE_30DEGC;
+./f288815362.c:	//if (get_option(&sysfan_temperature, "sysfan_temperature") < 0)
+./f288815362.c:	//	sysfan_temperature = FAN_TEMPERATURE_30DEGC;
+./f288815362.c:	hwm_write(0x54, 0xf1); // SYSTIN temperature offset
+./f288815362.c:	hwm_write(0x55, 0x19); // CPUTIN temperature offset
+./f288815362.c:	hwm_write(0x56, 0xfc); // AUXTIN temperature offset
+./f288815362.c:				temperatures[cpufan_temperature].deg_celsius,
+./f288815362.c:				temperatures[cpufan_temperature].deg_fahrenheit);
+./f288815362.c:		hwm_write(0x06, temperatures[cpufan_temperature].deg_celsius);  // CPUFANIN target temperature
+./f288815362.c:				temperatures[sysfan_temperature].deg_celsius,
+./f288815362.c:				temperatures[sysfan_temperature].deg_fahrenheit);
+./f288815362.c:		hwm_write(0x05, temperatures[sysfan_temperature].deg_celsius); // SYSFANIN target temperature
+./f193423338.c:    // ten times temperature in Celsius
+./f193423338.c:    // Western Digital uses this for temperature.
+./f193423338.c:    // max allowed operating temperature of the drive, which 
+./f193423338.c:unsigned char ata_return_temperature_value(const ata_smart_values * data, const ata_vendor_attr_defs & defs)
+./f193423338.c:int ataReadSCTTempHist(ata_device * device, ata_sct_temperature_history_table * tmh,
+./f407406506.c:	case 1:			/* temperature */
+./f403206402.c:					be16_to_cpu(eqe->event.warming.current_temperature));
+./f360466610.c:float temperature=0;
+./f360466610.c:		temperature=GetData();
+./f180622706.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f303493906.c://  determines sample time which needs to be greater than 30us for temperature
+./f268700602.c:/* [RO] 0=OK; 1=over temperature flag (150 C) */
+./f261409850.c:  unsigned char temperature[1];
+./f189247602.c:;   determines sample time which needs to be greater than 30us for temperature
+./f457513370.c:#define MDIO_PMA_LASI_TX_LASERTEMPFLT	0x0100	/* Laser temperature fault */
+./f279997026.c:float temperature=0;
+./f279997026.c:		temperature=GetData();
+./f411513858.c:	/* Set DSP over-temperature alert threshold */
+./f411513858.c:	/* Clear any previous over-temperature alert */
+./f411513858.c:	/* Clear any over-temperature alert */
+./f293918978.c: * temperature/power/energy sensors and capping functionality.
+./f293918978.c:	 * Two temperature sensors
+./f293918978.c:	/* exhaust temperature in C */
+./f293918978.c:/* Display temperature use */
+./f293920490.c:	0x85,			/* PWM 1 target temperature for temp 1 */
+./f293920490.c:	0x86,			/* PWM 2 target temperature for temp 2 */
+./f293920490.c:	0x96,			/* PWM 3 target temperature for temp 3 */
+./f293920490.c:	0x87,			/* PWM 1/2 temperature tolerance */
+./f293920490.c:	0x97,			/* PWM 3 temperature tolerance */
+./f293920490.c:	u8 temp_target[3];	/* pwm 1-3 target temperature */
+./f293920490.c:	u8 temp_tolerance[3];	/* pwm 1-3 temperature tolerance */
+./f293920490.c:/* read/write the temperature1, includes measured value and limits */
+./f293920490.c:/* read/write temperature2-3, includes measured value and limits */
+./f293920490.c:		/* Update PWM target temperature */
+./f293920490.c:		/* Update PWM temperature tolerance */
+./f293920490.c:		/* Update the first temperature sensor */
+./f293920490.c:		/* Update the rest of the temperature sensors */
+./f293920490.c:	 * temperature math is signed, but only print out the
+./f470036674.c:/* platform data for the MAX6639 temperature sensor and fan control */
+./f491152986.c:struct bbc_cpu_temperature {
+./f288807938.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f370250210.c:static int ataPrintSCTTempHist(const ata_sct_temperature_history_table * tmh)
+./f370250210.c:    // Find range of identical temperatures
+./f370250210.c:  // Print SCT status and temperature history table
+./f370250210.c:        ata_sct_temperature_history_table tmh;
+./f370250210.c:          // Read SCT status and temperature history
+./f370250210.c:        // Set new temperature logging interval
+./f432398002.c:/* Board temperature is about 15°C above ambient when air flow is
+./f432398002.c: * limited.  The maximum acceptable ambient temperature varies
+./f432398002.c: * depending on the PHY specifications but the critical temperature
+./f432398002.c:/* SFC4000 datasheet says: 'The maximum permitted junction temperature
+./f432398002.c:	/* If link is up then do not monitor temperature */
+./f432398002.c:			  temp_crit ? "; reached critical temperature" : "",
+./f432398002.c: * It also has a MAX6647 temperature monitor which we expose to
+./f432398002.c:	/* Clear any over-temperature alert */
+./f432398002.c:	/* Clear any previous over-temperature alert */
+./f432398002.c:	/* A0 board rev. 4002s report a temperature fault the whole time
+./f432398002.c:	/* A0/A1/A2 board rev. 4003s  report a temperature fault the whole time
+./f293921290.c: * It reports up to two temperatures (its own plus up to
+./f457523538.c: * @temperature_out_of_range:
+./f457523538.c: *	true: measure battery temperature
+./f457523538.c: *	false: measure ambient temperature
+./f457523538.c:	int (*temperature_out_of_range)(int *mC);
+./f457523538.c: * @last_temp_mC: the measured temperature in milli-Celsius
+./f307031610.c:#include <boost/units/physical_dimensions/temperature.hpp>
+./f307031610.c:                          temperature_base_dimension,-1>::type heat_capacity_dimension;                    
+./f176504450.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f176516162.c:struct temperature {
+./f176516162.c:struct temperature temperatures[] = {
+./f176516162.c:	int cpufan_temperature = 0, sysfan_temperature = 0;
+./f176516162.c:	//if (get_option(&cpufan_temperature, "cpufan_temperature") < 0)
+./f176516162.c:	//	cpufan_temperature = FAN_TEMPERATURE_30DEGC;
+./f176516162.c:	//if (get_option(&sysfan_temperature, "sysfan_temperature") < 0)
+./f176516162.c:	//	sysfan_temperature = FAN_TEMPERATURE_30DEGC;
+./f176516162.c:	hwm_write(0x54, 0xf1); // SYSTIN temperature offset
+./f176516162.c:	hwm_write(0x55, 0x19); // CPUTIN temperature offset
+./f176516162.c:	hwm_write(0x56, 0xfc); // AUXTIN temperature offset
+./f176516162.c:				temperatures[cpufan_temperature].deg_celsius,
+./f176516162.c:				temperatures[cpufan_temperature].deg_fahrenheit);
+./f176516162.c:		hwm_write(0x06, temperatures[cpufan_temperature].deg_celsius);  // CPUFANIN target temperature
+./f176516162.c:				temperatures[sysfan_temperature].deg_celsius,
+./f176516162.c:				temperatures[sysfan_temperature].deg_fahrenheit);
+./f176516162.c:		hwm_write(0x05, temperatures[sysfan_temperature].deg_celsius); // SYSFANIN target temperature
+./f491084802.c:		/* temperature */
+./f307031282.c:#include <boost/units/physical_dimensions/temperature.hpp>
+./f307031282.c:                          temperature_base_dimension,-1>::type specific_heat_capacity_dimension;                    
+./f176516626.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f311271498.c:#include <boost/units/physical_dimensions/temperature.hpp>
+./f311271498.c:struct kelvin_base_unit : public base_unit<kelvin_base_unit, temperature_dimension, -5>
+./f303494082.c://  Description: Use SD16 and it's integrated temperature sensor to detect
+./f303494082.c://  temperature delta. The temperature sensor output voltage is sampled
+./f303494082.c:static unsigned int LastADCVal;             // holds ADC temperature result
+./f310763210.c:    // ten times temperature in Celsius
+./f310763210.c:    // Western Digital uses this for temperature.
+./f310763210.c:    // max allowed operating temperature of the drive, which 
+./f310763210.c:unsigned char ata_return_temperature_value(const ata_smart_values * data, const ata_vendor_attr_defs & defs)
+./f310763210.c:int ataReadSCTTempHist(ata_device * device, ata_sct_temperature_history_table * tmh,
+./f288811362.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f269813050.c:  unsigned char temperature[1];
+./f285822554.c: * @temp:			battery pack temperature in Celcius
+./f285822554.c: * @temp:			battery pack temperature in Celcius
+./f285822554.c: * @temp_interval_chg	temperature measurement interval in s when charging
+./f285822554.c: * @temp_interval_nochg	temperature measurement interval in s when not charging
+./f285822554.c: * @temp_hysteresis	temperature hysteresis
+./f491015058.c:	int temperature = 0;
+./f491015058.c:			temperature = 1;
+./f491015058.c:		if (temperature) {
+./f457528090.c:			__be16  current_temperature;
+./f293920162.c: * is a temperature sensor and thermal window comparator with 0.5 deg
+./f293920162.c: * In the temperature registers, the low 3 bits are not part of the
+./f293920162.c: * temperature values; they are the status bits.
+./f293920162.c:/* read routines for temperature limits */
+./f356948810.c:  unsigned char temperature[1];
+./f491061250.c:		    "Device temperature %d degrees C exceeds "
+./f491061250.c:		    "Device temperature %d degrees C exceeds "
+./f491105058.c:	int bat_temperature;
+./f491105058.c:		power->bat_temperature = res->plu - 2732;
+./f491105058.c:		val->intval = power->bat_temperature;
+./f243938978.c:#define	WDIOS_TEMPPANIC		0x0004	/* Kernel panic on temperature trip */
+./f293920002.c: * jc42.c - driver for Jedec JC42.4 compliant temperature sensors
+./f293920002.c: * JC42.4 compliant temperature sensors are typically used on memory modules.
+./f293920002.c:/* Status bits in temperature register */
+./f293920002.c:/* read routines for temperature limits */
+./f232086018.c:  /** Processor temperature, in degrees Kelvin.  The value
+./f232086018.c:   *  that the temperature has hit an upper limit and is no longer being
+./f232086018.c:  /** Board temperature, in degrees Kelvin.  The value
+./f232086018.c:   *  that the temperature has hit an upper limit and is no longer being
+./f232086018.c:/** Offset to subtract from returned Kelvin temperature to get degrees
+./f232086018.c:/** Pseudo-temperature value indicating that the temperature has
+./f293919210.c:	 * additional offset, otherwise reported temperature is below
+./f293919210.c:	 * ambient temperature
+./f293919210.c:MODULE_DESCRIPTION("AMD K8 core temperature monitor");
+./f307031890.c:typedef unit<temperature_dimension,si::system>   temperature;
+./f307031890.c:BOOST_UNITS_STATIC_CONSTANT(kelvin,temperature);    
+./f307031890.c:BOOST_UNITS_STATIC_CONSTANT(kelvins,temperature);   
+./f351569666.c:  /** Processor temperature, in degrees Kelvin.  The value
+./f351569666.c:   *  that the temperature has hit an upper limit and is no longer being
+./f351569666.c:  /** Board temperature, in degrees Kelvin.  The value
+./f351569666.c:   *  that the temperature has hit an upper limit and is no longer being
+./f351569666.c:/** Offset to subtract from returned Kelvin temperature to get degrees
+./f351569666.c:/** Pseudo-temperature value indicating that the temperature has
+./f288812562.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f369372994.c:/* platform data for the MAX6639 temperature sensor and fan control */
+./f180643698.c:	 * Enable external temperature sensor to use PECI GetTemp()
+./f369385122.c:#define	WDIOS_TEMPPANIC		0x0004	/* Kernel panic on temperature trip */
+./f176508938.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f293932338.c: * conversion of analog signals like battery temperature,
+./f491105602.c: * OMAP4 Bandgap temperature sensor driver
+./f491105602.c:		/* read temperature */
+./f491105602.c:		/* report temperature to whom may concern */
+./f491105602.c:		if (bg_ptr->conf->report_temperature)
+./f491105602.c:			bg_ptr->conf->report_temperature(bg_ptr, i);
+./f491105602.c:	/* look up for temperature in the table and return the temperature */
+./f491105602.c:	/* Read the current on die temperature */
+./f491105602.c: * omap_bandgap_read_temperature() - report current temperature
+./f491105602.c: * @temperature - resulting temperature
+./f491105602.c:int omap_bandgap_read_temperature(struct omap_bandgap *bg_ptr, int id,
+./f491105602.c:				     int *temperature)
+./f491105602.c:	*temperature = temp;
+./f491105602.c:		 * it is an untrimmed sample and the temperatures
+./f491105602.c:			/* Force immediate temperature measurement and update
+./f491105602.c:MODULE_DESCRIPTION("OMAP4+ bandgap temperature sensor driver");
+./f370258882.c:	" -H   Read temperature from drive (Hitachi only)\n"
+./f370258882.c:			printf(" drive temperature (celsius) is:  ");
+./f370258882.c:			printf("\n drive temperature in range:  %s\n", YN(!(args[1]&0x10)) );
+./f449096434.c:	pr_notice("temperatures (Celsius):");
+./f449096434.c:		/* temperatures not supported on 570, G4x, R30, R31, R32 */
+./f449096434.c:	seq_printf(m, "temperatures:\t");
+./f449096434.c: * 			0x07 = max (set when temperatures critical)
+./f293921410.c:	bool temp_fault[2];	/* Detected temperature diode failure */
+./f293921410.c:	dev_info(&client->dev, "temperature sensor and fan control found\n");
+./f176515426.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f256177514.c: * Notice in the case of cpu voltage and temperature, the default is
+./f344221594.c:/* platform data for the DS620 temperature sensor and thermostat */
+./f279998122.c:float temperature=0;
+./f279998122.c:        temperature=GetData();
+./f279998122.c:	sprintf(buffer,"%f",temperature);
+./f457614746.c:	s8 lcnphy_lastsensed_temperature;
+./f311271546.c:// units of temperature
+./f311271546.c:    BOOST_UNITS_DEFINE_CONVERSION_FACTOR(boost::units::si::kelvin_base_unit, boost::units::temperature::celsius_base_unit, one, make_one());
+./f311271546.c:    BOOST_UNITS_DEFINE_CONVERSION_OFFSET(boost::units::si::kelvin_base_unit, boost::units::temperature::celsius_base_unit, double, -273.15);
+./f311271546.c:    BOOST_UNITS_DEFINE_CONVERSION_FACTOR(boost::units::si::kelvin_base_unit, boost::units::temperature::fahrenheit_base_unit, double, 9.0/5.0);
+./f311271546.c:    BOOST_UNITS_DEFINE_CONVERSION_OFFSET(boost::units::si::kelvin_base_unit, boost::units::temperature::fahrenheit_base_unit, double, -273.15 * 9.0 / 5.0 + 32.0);
+./f311271546.c:    BOOST_UNITS_DEFINE_CONVERSION_FACTOR(boost::units::temperature::celsius_base_unit, boost::units::temperature::fahrenheit_base_unit, double, 9.0/5.0);
+./f311271546.c:    BOOST_UNITS_DEFINE_CONVERSION_OFFSET(boost::units::temperature::celsius_base_unit, boost::units::temperature::fahrenheit_base_unit, double, 32.0);
+./f308521610.c:    } else { /* disabling Exception Control and (temperature) Warnings */
+./f308521610.c:        pout("Log Sense for temperature failed [%s]\n", scsiErrString(err));
+./f308521610.c: * Returns 0 if ok, else error number. A current temperature of 255
+./f308521610.c: * (Celsius) implies that the temperature not available. */
+./f308521610.c:    int temperatureSet = 0;
+./f308521610.c:    if ((! temperatureSet) && hasTempLogPage) {
+./f308521610.c:       "  specified temperature range.",
+./f308521610.c:        "  specified temperature range.",
+./f370253250.c: *  Updates the temperatures in mac.thermal_sensor_data
+./f306990674.c:#include <boost/units/physical_dimensions/temperature.hpp>
+./f306990674.c:struct temperature_unit_tag : base_unit<temperature_unit_tag, temperature_dimension, -26> { };
+./f306990674.c:    temperature_unit_tag,
+./f306990674.c:typedef unit<temperature_dimension,system>           temperature;            ///< abstract unit of temperature
+./f306990674.c:struct base_unit_info<abstract::temperature_unit_tag> 
+./f491153090.c:#define PCF8584_TEMP_TYPE	        	1  /* temperature monitor*/
+./f491153090.c:#define ENVCTRL_CPUTEMP_MON			1    /* cpu temperature monitor */
+./f491153090.c:#define ENVCTRL_ETHERTEMP_MON		4    /* ethernet temperature */
+./f491153090.c:#define ENVCTRL_MTHRBDTEMP_MON		6    /* motherboard temperature */
+./f491153090.c:#define ENVCTRL_SCSITEMP_MON		7    /* scsi temperature */
+./f491153090.c:static unsigned int warning_temperature = 0;
+./f491153090.c:static unsigned int shutdown_temperature = 0;
+./f491153090.c:/* Function Description: Read cpu-related data such as cpu temperature, voltage.
+./f491153090.c: *                       temperature.
+./f491153090.c:		if (warning_temperature == 0)
+./f491153090.c:		data[0] = (unsigned char)(warning_temperature);
+./f491153090.c:		if (shutdown_temperature == 0)
+./f491153090.c:		data[0] = (unsigned char)(shutdown_temperature);
+./f491153090.c:	/* Firmware only has temperature type.  It does not distinguish
+./f491153090.c:	 * different kinds of temperatures.  We use channel description
+./f491153090.c:		warning_temperature = *pval;
+./f491153090.c:		shutdown_temperature = *pval;
+./f491153090.c:	/* Get tables property.  Read firmware temperature tables. */
+./f491153090.c:				if (tempbuf[0] >= shutdown_temperature) {
+./f491153090.c:						"%s: WARNING: CPU%i temperature %i C meets or exceeds "\
+./f491153090.c:						tempbuf[0], shutdown_temperature);
+./f303591314.c:;   Description: Set ADC10 and the integrated temperature sensor to detect
+./f303591314.c:;   temperature gradients. The temperature sensor output voltage is sampled
+./f303591314.c:;   30us for temperature sensor.
+./f293416146.c: * "K8 Miscellaneous Control" and it will expose the temperature
+./f293416146.c: * Note: as only the current temperature and the trip temperature for
+./f293416146.c: * linux driver for thermal zones needs a critical temperature value, a
+./f293416146.c: * reasonable critical temperature is calculated by simply adding 6°C to
+./f293416146.c: * the trip temperature.
+./f293416146.c:	TMAX, 5, /* Maximum temperature for software thermal control, in °C, biased by 52 */
+./f293416146.c:/* Calculates temperature in tenths Kelvin from given TVAL and TFRC values */
+./f327476802.c:	/* Read temperature register */
+./f327476802.c:	 * care about the internal temperature sensor
+./f293923778.c: * In the VIA datasheet, however, the temperatures are numbered from zero.
+./f293923778.c: * NB  The values returned here are NOT temperatures.  The calibration curves
+./f293923778.c: *     register.  The temperature value returned should have a magnitude of 3,
+./f293923778.c: *     All the on-chip hardware temperature comparisons for the alarms are only
+./f293923778.c: *     8-bits wide, and compare against the 8 MSBs of the temperature.  The bits
+./f293923778.c: * Note that these map the Linux temperature sensor numbering (1-6) to the VIA
+./f293923778.c: * temperature sensor numbering (0-5)
+./f293923778.c:#define define_temperature_sysfs(offset)				\
+./f293923778.c:define_temperature_sysfs(2);
+./f293923778.c:define_temperature_sysfs(3);
+./f293923778.c:define_temperature_sysfs(4);
+./f293923778.c:define_temperature_sysfs(5);
+./f293923778.c:define_temperature_sysfs(6);
+./f293906066.c:	int			temperatures_probed;
+./f293906066.c:/* Probe for temperature sensors.  Assumes lock is held */
+./f293906066.c:static int adt7470_read_temperatures(struct i2c_client *client,
+./f293906066.c:	/* start reading temperature sensors */
+./f293906066.c:	/* done reading temperature sensors */
+./f293906066.c:	data->temperatures_probed = 1;
+./f293906066.c:		adt7470_read_temperatures(client, data);
+./f293906066.c:	if (!data->temperatures_probed)
+./f293906066.c:		adt7470_read_temperatures(client, data);
+./f293906066.c:		data->temperatures_probed = 0;
+./f293918866.c:MODULE_DESCRIPTION("AMD Family 10h+ CPU core temperature monitor");
+./f189690274.c:float temperature=0;
+./f189690274.c:		temperature=GetData();
+./f306990866.c:#include <boost/units/base_units/temperature/celsius.hpp>
+./f306990866.c:typedef make_system<boost::units::temperature::celsius_base_unit>::type system;
+./f306990866.c:typedef unit<temperature_dimension,system>   temperature;
+./f306990866.c:BOOST_UNITS_STATIC_CONSTANT(degree,temperature);
+./f306990866.c:BOOST_UNITS_STATIC_CONSTANT(degrees,temperature);
+./f293919058.c:	 * IT8721F and later have separate registers for the temperature
+./f293919058.c:/* 3 temperatures */
+./f293919058.c:		 * is the temperature source. Since we can not read the
+./f293919058.c:		 * temperature source here, skip_temp is preliminary.
+./f293919058.c:	 * - If it is in manual mode, we need a mapping to temperature
+./f293919058.c:	 * these have separate registers for the temperature mapping and the
+./f293919058.c:	 * alarms, so change to 0 instead. For high temperature limits, it
+./f261923522.c:  //printf(".%i\n",temperature[1]); 
+./f261923522.c:  unsigned char temperature[1];
+./f288803474.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f288799010.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f457527210.c:/* platform data for the MAX6639 temperature sensor and fan control */
+./f261484618.c:  unsigned char temperature[1];
+./f293923626.c: * Driver for the Texas Instruments TMP421 SMBus temperature sensor IC.
+./f293923626.c:	/* Add offset for extended temperature range. */
+./f293923626.c:	 * The OPEN bit signals a fault. This is bit 0 of the temperature
+./f293923626.c:MODULE_DESCRIPTION("Texas Instruments TMP421/422/423 temperature sensor"
+./f436599738.c: * Notice in the case of cpu voltage and temperature, the default is
+./f288815570.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f449096194.c:/* battery / brightness / temperature  addresses */
+./f457523578.c:/* Use default factory programmed value for hard/soft temperature limit */
+./f457523578.c: * @chip_temp_threshold: die temperature where device starts limiting charge
+./f457523578.c: * @soft_cold_temp_limit: soft cold temperature limit [%0 - %15] (in degree C),
+./f457523578.c: * @soft_hot_temp_limit: soft hot temperature limit [%40 - %55] (in degree  C),
+./f457523578.c: * @hard_cold_temp_limit: hard cold temperature limit [%-5 - %10] (in degree C),
+./f457523578.c: * @hard_hot_temp_limit: hard hot temperature limit [%50 - %65] (in degree C),
+./f457523578.c: * @soft_temp_limit_compensation: compensation method when soft temperature
+./f457523578.c: *				 current when temperature hits soft limits
+./f457523578.c: * Hard and soft temperature limit values are given as described in the
+./f457523578.c: * factory programmed default will be used. For soft/hard temperature
+./f293919330.c: * its own temperature with a 0.0625 deg resolution and a 0.33 deg
+./f293919330.c:/* Alarm flags are stored in the 3 LSB of the temperature register */
+./f360466514.c:float temperature=0;
+./f360466514.c:		temperature=GetData();
+./f304034218.c:  unsigned char temperature[1];
+./f457525122.c:	unsigned	no_temp_support:1; /* set if no temperature detect */
+./f307031802.c:#include <boost/units/systems/si/temperature.hpp>
+./f307031802.c:/// Planck temperature
+./f307031802.c:BOOST_UNITS_PHYSICAL_CONSTANT(T_P,quantity<temperature>,1.416785e32*kelvin,7.1e27*kelvin);
+./f288807378.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f288800962.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f293431154.c:	 * Enable external temperature sensor to use PECI GetTemp()
+./f280663162.c:  unsigned char temperature[1];
+./f293920042.c: * lm63.c - driver for the National Semiconductor LM63 temperature sensor
+./f293920042.c: * two temperatures (its own and one external one) and the speed of one
+./f293920042.c: *  - No low limit for local temperature.
+./f293920042.c: *  - No critical limit for local temperature.
+./f293920042.c: *  - Critical limit for remote temperature can be changed only once. We
+./f293920042.c: * For local temperature and high limit, remote critical limit and hysteresis
+./f293920042.c: * For remote temperature, low and high limits, it uses signed 11-bit values
+./f293920042.c: * For LM64 the actual remote diode temperature is 16 degree Celsius higher
+./f293920042.c: * than the register reading. Remote temperature setpoints have to be
+./f293920042.c: * temperatures and PWM output values.
+./f293920042.c:		 * Use unsigned temperature unless its value is zero.
+./f293920042.c:		 * If it is zero, use signed temperature.
+./f293920042.c:	 * and unsigned temperature format is enabled.
+./f293923674.c: * via-cputemp.c - Driver for VIA CPU core temperature monitoring
+./f293923674.c:MODULE_DESCRIPTION("VIA CPU temperature monitor");
+./f288800674.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f491070474.c: * The LM70 is a temperature sensor chip from National Semiconductor; its
+./f288810194.c:		printk(BIOS_DEBUG, "S4 DTS SMI (Update NVS DTS temperature)\n");
+./f491098114.c:	 * The temperature reading is in 12-bit twos complement format
+./f491098114.c:		tmp *= 250; /* temperature in milli degrees Celsius */
+./f402935338.c:/* platform data for the DS620 temperature sensor and thermostat */
+./f279998362.c:float temperature=0;
+./f279998362.c:        temperature=GetData();
+./f279998362.c:   	//sprintf(s, "%02d,%03d", (uint) temperature, ((uint)((f - floor(f)) * 1000.0)) );
+./f316175354.c:	scsi_warning_specified_temperature_exceeded		= 0x0b01,
+./f256330770.c:		      "temperature: %i.%i C, fan %s\n",
+./f256330770.c:	 * temperature high point low.  This kicks
+./f279998306.c:float temperature=0;
+./f279998306.c:        temperature=GetData();
+./f279998306.c:   	sprintf(s, "%02d,%03d", (uint) temperature, ((uint)((temperature - floor(temperature)) * 1000.0)) );
+./f360466338.c:float temperature=0;
+./f360466338.c:		temperature=GetData();
+./f307031594.c:#include <boost/units/physical_dimensions/temperature.hpp>
+./f307031594.c:                          temperature_base_dimension,-1>::type thermal_conductivity_dimension;                    
+./f311272186.c:#include <boost/units/physical_dimensions/temperature.hpp>
+./f457507914.c:#define	WDIOS_TEMPPANIC		0x0004	/* Kernel panic on temperature trip */
+./f284690306.c:  unsigned char temperature;
+./f311271562.c:#include <boost/units/physical_dimensions/temperature.hpp>
+./f311271562.c:namespace temperature {
+./f311271562.c:struct fahrenheit_base_unit : public base_unit<fahrenheit_base_unit, temperature_dimension, -1007>
+./f311271562.c:} // namespace temperature
+./f311271562.c:BOOST_TYPEOF_REGISTER_TYPE(boost::units::temperature::fahrenheit_base_unit)
+./f311271562.c:#include <boost/units/base_units/temperature/conversions.hpp>
+./f491098322.c: * AD7816 digital temperature sensor driver supporting AD7816/7/8
+./f491098322.c: * AD7816 temperature masks
+./f491098322.c:	u8  channel_id;	/* 0 always be temperature */
+./f491098322.c: * temperature bound events
+./f491098322.c:	dev_info(&spi_dev->dev, "%s temperature sensor and ADC registered.\n",
+./f491098322.c:			" temperature sensor driver");
+./f293921026.c:		/* 4 temperature inputs */
+./f304055034.c:  unsigned char temperature;
+./f279997186.c:float temperature=0;
+./f279997186.c:        temperature=GetData();
+./f279997186.c:        sendString( "temperature" );
+./f193424010.c:    } else { /* disabling Exception Control and (temperature) Warnings */
+./f193424010.c:        pout("Log Sense for temperature failed [%s]\n", scsiErrString(err));
+./f193424010.c: * Returns 0 if ok, else error number. A current temperature of 255
+./f193424010.c: * (Celsius) implies that the temperature not available. */
+./f193424010.c:    int temperatureSet = 0;
+./f193424010.c:    if ((! temperatureSet) && hasTempLogPage) {
+./f193424010.c:       "  specified temperature range.",
+./f193424010.c:        "  specified temperature range.",
+./f176519634.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f293922930.c:	/* The internal temperature sensor is always active */
+./f243612418.c:	" -H   Read temperature from drive (Hitachi only)\n"
+./f243612418.c:			printf(" drive temperature (celsius) is:  ");
+./f243612418.c:			printf("\n drive temperature in range:  %s\n", YN(!(args[1]&0x10)) );
+./f293922978.c:	 * and READ_TEMPERATURE2 will return the maximum temperature detected
+./f370252714.c:  unsigned char temperature;              // last recorded Temperature (in Celsius)
+./f370252714.c:  unsigned char TempPageSupported;        // has log sense temperature page (0xd)
+./f370252714.c:  temperature(0),
+./f370252714.c:     "((temperature-min)" // (1 (2)
+./f370252714.c:     "|(temperature-max)" // (3)
+./f370252714.c:  write_dev_state_line(f, "temperature-min", state.tempmin);
+./f370252714.c:  write_dev_state_line(f, "temperature-max", state.tempmax);
+./f370252714.c:    // current pending sectors or temperature
+./f370252714.c:        && !ata_return_temperature_value(&state.smartval, cfg.attribute_defs)) {
+./f370252714.c:  // if asked for a log page (e.g. temperature) so it is best to
+./f370252714.c:  if (!state.temperature) {
+./f370252714.c:    state.temperature = currtemp;
+./f370252714.c:      if (currtemp != state.temperature)
+./f370252714.c:    if (cfg.tempdiff && (*minchg || *maxchg || abs((int)currtemp - (int)state.temperature) >= cfg.tempdiff)) {
+./f370252714.c:        cfg.name.c_str(), (int)currtemp-(int)state.temperature, currtemp, fmt_temp(state.tempmin, buf), minchg, state.tempmax, maxchg);
+./f370252714.c:      state.temperature = currtemp;
+./f370252714.c:      // check temperature limits
+./f370252714.c:        CheckTemperature(cfg, state, ata_return_temperature_value(&curval, cfg.attribute_defs), 0);
+./f370252714.c:    // check temperature limits
+./f176505610.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f491063290.c: * qla4_8xxx_check_temp - Check the ISP82XX temperature.
+./f491063290.c:		ql4_printk(KERN_WARNING, ha, "Device temperature %d degrees C"
+./f491063290.c:		if (ha->temperature == QLA82XX_TEMP_NORMAL)
+./f491063290.c:			ql4_printk(KERN_WARNING, ha, "Device temperature %d"
+./f491063290.c:		if (ha->temperature == QLA82XX_TEMP_WARN)
+./f491063290.c:			ql4_printk(KERN_INFO, ha, "Device temperature is"
+./f491063290.c:	ha->temperature = temp_state;
+./f261485594.c:  unsigned char temperature[1];
+./f260659802.c:/* platform data for the DS620 temperature sensor and thermostat */
+./f176512786.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f402950834.c:#define	WDIOS_TEMPPANIC		0x0004	/* Kernel panic on temperature trip */
+./f293925290.c:/* read/write the temperature, includes measured value and limits */
+./f293925290.c:		/* Update the temperature sensors */
+./f293905538.c: * are temperature trip points.
+./f176514602.c:	/* temperature limit of fan stop for fan3 (automatic) */
+./f176514602.c:	/* temperature limit of fan start for fan3 (automatic) */
+./f176514602.c:	/* set smartguardian temperature interval for fan3 */
+./f491024962.c:		of_platform_device_create(np, "temperature", NULL);
+./f293925050.c: *  Equations given by chip manufacturer to calculate voltage/temperature values
+./f17958658.c:  /** Processor temperature, in degrees Kelvin.  The value
+./f17958658.c:   *  that the temperature has hit an upper limit and is no longer being
+./f17958658.c:  /** Board temperature, in degrees Kelvin.  The value
+./f17958658.c:   *  that the temperature has hit an upper limit and is no longer being
+./f17958658.c:/** Offset to subtract from returned Kelvin temperature to get degrees
+./f17958658.c:/** Pseudo-temperature value indicating that the temperature has
+./f176498834.c:	/* Set Tmin to 55C, rather than the default 90C. Above this temperature
+./f176498834.c:	 * the fans will start blowing harder as temperature increases
+./f176498834.c:	 * The fans will kick in at 100% if the sensors reach this temperature,
+./f176498834.c:	/* Remote temperature 1 offset (LSB == 0.25C). */
+./f176498834.c:	/* Remote temperature 2 offset (LSB == 0.25C). */
+./f303996386.c:  unsigned char temperature;
+./f303493962.c://  Uncalibrated temperature measured from device to device will vary with
+./f293922802.c: * Dedicated function to read all registers related to a given temperature
+./f293922802.c:	/* Check which temperature channels are enabled */
+./f293919810.c: * Give only processor, motherboard temperatures and fan tachs
+./f293919810.c:	/* registers values, signed for temperature, unsigned for other stuff */
+./f293919810.c: * function that update the status of the chips (temperature for example)
+./f180620290.c:struct __table__ temperatures[] = {
+./f180620290.c:struct __table__ temperatures[] = {
+./f180620290.c:#define SIZEOF_TEMPERATURES sizeof(temperatures)/sizeof(struct __table__)
+./f180620290.c:#define TEMPERATURE(i,d) (i < SIZEOF_TEMPERATURES) ? temperatures[i].val : temperatures[d].val // hopefully d is a correct value !!! fix
+./f180620290.c:#define TEMPERATURE_INFO(i) (i < SIZEOF_TEMPERATURES) ? temperatures[i].info : "out of range"
+./f180620290.c:		/*  Remote 1 temperature Tmin     (32C) */
+./f180620290.c:		/* local temperature Tmin     (32C) */
+./f261963954.c:  //printf(".%i\n",temperature[1]); 
+./f261963954.c:  unsigned char temperature[1];
+./f189652522.c:  unsigned char temperature;
+./f491248034.c:static int auok190x_read_temperature(struct auok190xfb_par *par)
+./f491248034.c:	/* handle positive and negative temperatures */
+./f491248034.c:	temp = auok190x_read_temperature(par);
+./f491062546.c:	uint16_t temperature;
+./f279997466.c:float temperature=0;
+./f279997466.c:        temperature=GetData();
+./f279997466.c:	sprintf(buffer,"%6.3f",temperature);
+./f288795834.c:				TMP0, 8,	/* Thermal Zone 0 temperature */
+./f288795834.c:				TMP1, 8,	/* Thermal Zone 1 temperature */
+./f293905922.c: *  Driver for the ADT7411 (I2C/SPI 8 channel 10 bit ADC & temperature-sensor)
+./f293905922.c: *  TODO: SPI, support for external temperature sensor
+./f169005842.c:float temperature=0;
+./f169005842.c:		temperature=GetData();
+./f340305010.c:#define	WDIOS_TEMPPANIC		0x0004	/* Kernel panic on temperature trip */
+./f189711042.c:  unsigned char temperature;
+./f419838074.c:/* [RO] 0=OK; 1=over temperature flag (150 C) */
+./f491153026.c:/* Two temperature sensors exist in the SunBLADE-1000 enclosure.
+./f491153026.c: * monitors 2 temperatures, one for one of the cpu dies and the other
+./f491153026.c: * for the ambient temperature.
+./f491153026.c: * temperature values, one low limit and one high limit.  These
+./f491153026.c: * can be controlled independently for the cpu or ambient temperature.
+./f491153026.c: * with which the max1617 does temperature sampling can be controlled
+./f491153026.c: * temperature sensors.  Based upon the samples it will adjust the
+./f491153026.c: * fan speeds to try and keep the system within a certain temperature
+./f491153026.c: * If the temperature begins to rise/fall outside of the acceptable
+./f491153026.c:	/* Put temperatures into range so we don't mis-program
+./f491153026.c:static void get_current_temps(struct bbc_cpu_temperature *tp)
+./f491153026.c:static void do_envctrl_shutdown(struct bbc_cpu_temperature *tp)
+./f491153026.c:	       "operating temperature, %d C.\n",
+./f491153026.c:static void analyze_ambient_temp(struct bbc_cpu_temperature *tp, unsigned long *last_warn, int tick)
+./f491153026.c:			       "Above safe ambient operating temperature, %d C.\n",
+./f491153026.c:			       "Below safe ambient operating temperature, %d C.\n",
+./f491153026.c:static void analyze_cpu_temp(struct bbc_cpu_temperature *tp, unsigned long *last_warn, int tick)
+./f491153026.c:			       "Above safe CPU operating temperature, %d C.\n",
+./f491153026.c:			       "Below safe CPU operating temperature, %d C.\n",
+./f491153026.c:static void analyze_temps(struct bbc_cpu_temperature *tp, unsigned long *last_warn)
+./f491153026.c:	struct bbc_cpu_temperature *tp;
+./f491153026.c:	/* Basically, prioritize what the temperature sensors
+./f491153026.c:		struct bbc_cpu_temperature *tp;
+./f491153026.c:	struct bbc_cpu_temperature *tp;
+./f491153026.c:	/* Program the hard temperature limits into the chip. */
+./f491153026.c:static void destroy_one_temp(struct bbc_cpu_temperature *tp)
+./f491153026.c:	struct bbc_cpu_temperature *tp, *tpos;
+./f491153026.c:		if (!strcmp(op->dev.of_node->name, "temperature"))
+./f370253186.c: *  Updates the temperatures in mac.thermal_sensor_data
+./f308523338.c:  signed char hda_temp;             // 200: Current temperature in Celsius (0x80 = invalid)
+./f308523338.c:  signed char min_temp;             // 201: Minimum temperature this power cycle
+./f308523338.c:  signed char max_temp;             // 202: Maximum temperature this power cycle
+./f308523338.c:  signed char life_min_temp;        // 203: Minimum lifetime temperature
+./f308523338.c:  signed char life_max_temp;        // 204: Maximum lifetime temperature
+./f308523338.c:  unsigned char byte205;            // 205: reserved (T13/e06152r0-2: Average lifetime temperature)
+./f308523338.c:  unsigned int over_limit_count;    // 206-209: # intervals since last reset with temperature > Max Op Limit
+./f308523338.c:  unsigned int under_limit_count;   // 210-213: # intervals since last reset with temperature < Min Op Limit
+./f308523338.c:struct ata_sct_temperature_history_table
+./f308523338.c:  signed char max_op_limit;         // 6: Maximum recommended continuous operating temperature
+./f308523338.c:  signed char over_limit;           // 7: Maximum temperature limit
+./f308523338.c:  signed char under_limit;          // 9: Minimum temperature limit
+./f308523338.c:  signed char cb[478];              // 34-(34+cb_size-1): Circular buffer of temperature values
+./f308523338.c:ASSERT_SIZEOF_STRUCT(ata_sct_temperature_history_table, 512);
+./f308523338.c:int ataReadSCTTempHist(ata_device * device, ata_sct_temperature_history_table * tmh,
+./f308523338.c:// Set SCT temperature logging interval
+./f308523338.c:unsigned char ata_return_temperature_value(const ata_smart_values * data, const ata_vendor_attr_defs & defs);
+./f315699650.c:#define	WDIOS_TEMPPANIC		0x0004	/* Kernel panic on temperature trip */
+./f193424442.c:  unsigned char temperature;              // last recorded Temperature (in Celsius)
+./f193424442.c:  unsigned char TempPageSupported;        // has log sense temperature page (0xd)
+./f193424442.c:  temperature(0),
+./f193424442.c:     "((temperature-min)" // (1 (2)
+./f193424442.c:     "|(temperature-max)" // (3)
+./f193424442.c:  write_dev_state_line(f, "temperature-min", state.tempmin);
+./f193424442.c:  write_dev_state_line(f, "temperature-max", state.tempmax);
+./f193424442.c:    // current pending sectors or temperature
+./f193424442.c:        && !ata_return_temperature_value(&state.smartval, cfg.attribute_defs)) {
+./f193424442.c:  // if asked for a log page (e.g. temperature) so it is best to
+./f193424442.c:  if (!state.temperature) {
+./f193424442.c:    state.temperature = currtemp;
+./f193424442.c:      if (currtemp != state.temperature)
+./f193424442.c:    if (cfg.tempdiff && (*minchg || *maxchg || abs((int)currtemp - (int)state.temperature) >= cfg.tempdiff)) {
+./f193424442.c:        cfg.name.c_str(), (int)currtemp-(int)state.temperature, currtemp, fmt_temp(state.tempmin, buf), minchg, state.tempmax, maxchg);
+./f193424442.c:      state.temperature = currtemp;
+./f193424442.c:      // check temperature limits
+./f193424442.c:        CheckTemperature(cfg, state, ata_return_temperature_value(&curval, cfg.attribute_defs), 0);
+./f193424442.c:    // check temperature limits
+./f303493290.c:;   Uncalibrated temperature measured from device to devive will vary with
+./f303493290.c:            call    #Trans2TempC            ; Transform voltage to temperature
+./f303493290.c:            mov.w   R13,&0200h              ; 0200h = temperature oC
+./f303493290.c:            call    #Trans2TempF            ; Transform voltage to temperature
+./f303493290.c:            mov.w   R13,&0202h              ; 0202h = temperature oF
+./f293407746.c:struct __table__ temperatures[] = {
+./f293407746.c:struct __table__ temperatures[] = {
+./f293407746.c:#define SIZEOF_TEMPERATURES sizeof(temperatures)/sizeof(struct __table__)
+./f293407746.c:#define TEMPERATURE(i,d) (i < SIZEOF_TEMPERATURES) ? temperatures[i].val : temperatures[d].val // hopefully d is a correct value !!! fix
+./f293407746.c:#define TEMPERATURE_INFO(i) (i < SIZEOF_TEMPERATURES) ? temperatures[i].info : "out of range"
+./f293407746.c:		/*  Remote 1 temperature Tmin     (32C) */
+./f293407746.c:		/* local temperature Tmin     (32C) */
+./f470052738.c:	int last_temperature;
+./f303493858.c://  Description: se ADC10 and the integrated temperature sensor to detect
+./f303493858.c://  temperature gradients. The temperature sensor output voltage is sampled
+./f303493858.c://  30us for temperature sensor.
+./f315699418.c:/* get temperature (C) */
+./f176519426.c:struct temperature {
+./f176519426.c:struct temperature temperatures[] = {
+./f176519426.c:	int cpufan_temperature = 0, sysfan_temperature = 0;
+./f176519426.c:	//if (get_option(&cpufan_temperature, "cpufan_temperature") < 0)
+./f176519426.c:	//	cpufan_temperature = FAN_TEMPERATURE_30DEGC;
+./f176519426.c:	//if (get_option(&sysfan_temperature, "sysfan_temperature") < 0)
+./f176519426.c:	//	sysfan_temperature = FAN_TEMPERATURE_30DEGC;
+./f176519426.c:	hwm_write(0x54, 0xf1); // SYSTIN temperature offset
+./f176519426.c:	hwm_write(0x55, 0x19); // CPUTIN temperature offset
+./f176519426.c:	hwm_write(0x56, 0xfc); // AUXTIN temperature offset
+./f176519426.c:				temperatures[cpufan_temperature].deg_celsius,
+./f176519426.c:				temperatures[cpufan_temperature].deg_fahrenheit);
+./f176519426.c:		hwm_write(0x06, temperatures[cpufan_temperature].deg_celsius);  // CPUFANIN target temperature
+./f176519426.c:				temperatures[sysfan_temperature].deg_celsius,
+./f176519426.c:				temperatures[sysfan_temperature].deg_fahrenheit);
+./f176519426.c:		hwm_write(0x05, temperatures[sysfan_temperature].deg_celsius); // SYSFANIN target temperature
+./f159785138.c:  unsigned char temperature[1];
+./f173164418.c:  unsigned char temperature;
+./f407404538.c:    lprintf(LOG_NOTICE, "      Allows you to set the unit for the system ambient temperature mode.");
+./f370252194.c:    "halted due to temperature out of range",
+./f340256226.c:#define MDIO_PMA_LASI_TX_LASERTEMPFLT	0x0100	/* Laser temperature fault */
+./f288807082.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f293918810.c:MODULE_PARM_DESC(extra_sensor_type, "Type of extra sensor (0=autodetect, 1=temperature, 2=voltage)");
+./f176519082.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f402943010.c:	int last_temperature;
+./f457527114.c:/* platform data for the DS620 temperature sensor and thermostat */
+./f288807674.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f293918946.c: * temperature sensors
+./f293918946.c:MODULE_DESCRIPTION("Intel 5000 chipset FB-DIMM AMB temperature sensor");
+./f176503074.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f360466690.c:float temperature=0;
+./f360466690.c:		temperature=GetData();
+./f285820802.c:/* platform data for the DS620 temperature sensor and thermostat */
+./f180621346.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f340302290.c:/* get temperature (C) */
+./f260662530.c:	scsi_warning_specified_temperature_exceeded		= 0x0b01,
+./f293922946.c:MODULE_DESCRIPTION("MAX1668 remote temperature sensor driver");
+./f361213778.c:/* [RO] 0=OK; 1=over temperature flag (150 C) */
+./f159787266.c:  unsigned char temperature[1];
+./f369396706.c:	scsi_warning_specified_temperature_exceeded		= 0x0b01,
+./f176507538.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f176505026.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f402937634.c:#define MDIO_PMA_LASI_TX_LASERTEMPFLT	0x0100	/* Laser temperature fault */
+./f288810538.c:	/* temperature limit of fan stop for fan3 (automatic) */
+./f288810538.c:	/* temperature limit of fan start for fan3 (automatic) */
+./f288810538.c:	/* set smartguardian temperature interval for fan3 */
+./f370252482.c:    // ten times temperature in Celsius
+./f370252482.c:    // Western Digital uses this for temperature.
+./f370252482.c:    // max allowed operating temperature of the drive, which 
+./f370252482.c:unsigned char ata_return_temperature_value(const ata_smart_values * data, const ata_vendor_attr_defs & defs)
+./f370252482.c:int ataReadSCTTempHist(ata_device * device, ata_sct_temperature_history_table * tmh,
+./f243748354.c:  signed char hda_temp;             // 200: Current temperature in Celsius (0x80 = invalid)
+./f243748354.c:  signed char min_temp;             // 201: Minimum temperature this power cycle
+./f243748354.c:  signed char max_temp;             // 202: Maximum temperature this power cycle
+./f243748354.c:  signed char life_min_temp;        // 203: Minimum lifetime temperature
+./f243748354.c:  signed char life_max_temp;        // 204: Maximum lifetime temperature
+./f243748354.c:  unsigned char byte205;            // 205: reserved (T13/e06152r0-2: Average lifetime temperature)
+./f243748354.c:  unsigned int over_limit_count;    // 206-209: # intervals since last reset with temperature > Max Op Limit
+./f243748354.c:  unsigned int under_limit_count;   // 210-213: # intervals since last reset with temperature < Min Op Limit
+./f243748354.c:struct ata_sct_temperature_history_table
+./f243748354.c:  signed char max_op_limit;         // 6: Maximum recommended continuous operating temperature
+./f243748354.c:  signed char over_limit;           // 7: Maximum temperature limit
+./f243748354.c:  signed char under_limit;          // 9: Minimum temperature limit
+./f243748354.c:  signed char cb[478];              // 34-(34+cb_size-1): Circular buffer of temperature values
+./f243748354.c:ASSERT_SIZEOF_STRUCT(ata_sct_temperature_history_table, 512);
+./f243748354.c:int ataReadSCTTempHist(ata_device * device, ata_sct_temperature_history_table * tmh,
+./f243748354.c:// Set SCT temperature logging interval
+./f243748354.c:unsigned char ata_return_temperature_value(const ata_smart_values * data, const ata_vendor_attr_defs & defs);
+./f303996402.c:  unsigned char temperature;
+./f403199170.c:	u32 temperature_in_half_celsius;
+./f288794914.c:	/* select temperature sensor (TSS)*/
+./f189652466.c:  unsigned char temperature;
+./f491168826.c:	{0x0B01, "Warning - specified temperature exceeded"},
+./f302449346.c:/* get temperature (C) */
+./f491113730.c:	0x40000100,	// 6, +0db ===> default, upper for higher temperature, lower for low temperature
+./f491113730.c:	if(tmpRegA >= 12)	// if over 12, TP will be bad when high temperature
+./f491113730.c:	//Get current RF-A temperature index
+./f491113730.c:	if(priv->ThermalMeter[0] >= (u8)tmpRegA)	//lower temperature
+./f491113730.c:		if(tmpval >= 6)								// higher temperature
+./f303591538.c:;   determines sample time which needs to be greater than 30us for temperature
+./f277989122.c:  /** Processor temperature, in degrees Kelvin.  The value
+./f277989122.c:   *  that the temperature has hit an upper limit and is no longer being
+./f277989122.c:  /** Board temperature, in degrees Kelvin.  The value
+./f277989122.c:   *  that the temperature has hit an upper limit and is no longer being
+./f277989122.c:/** Offset to subtract from returned Kelvin temperature to get degrees
+./f277989122.c:/** Pseudo-temperature value indicating that the temperature has
+./f307031730.c:#include <boost/units/systems/si/temperature.hpp>
+./f307031730.c:typedef divide_typeof_helper<energy,temperature>::type energy_over_temperature;
+./f307031730.c:typedef divide_typeof_helper<energy_over_temperature,amount>::type energy_over_temperature_amount;
+./f307031730.c:            power_typeof_helper<temperature,static_rational<4> >::type
+./f307031730.c:        >::type power_over_area_temperature_4;
+./f307031730.c:typedef multiply_typeof_helper<length,temperature>::type length_temperature;
+./f307031730.c:typedef divide_typeof_helper<frequency,temperature>::type frequency_over_temperature;
+./f303994906.c:  unsigned char temperature;
+./f491183618.c:				 * BIT 2: temperature high
+./f306990882.c:#include <boost/units/systems/si/temperature.hpp>
+./f189652450.c:  unsigned char temperature;
+./f491099202.c:#define ADIS16260_TEMP_OUT   0x0C /* internal temperature measurement */
+./f303493426.c:;   Description: Use SD16 and it's integrated temperature sensor to detect
+./f303493426.c:;   temperature delta. The temperature sensor output voltage is sampled
+./f176514258.c:		printk(BIOS_DEBUG, "S4 DTS SMI (Update NVS DTS temperature)\n");
+./f261484706.c:  unsigned char temperature[1];
+./f304034210.c:float temperature=0;
+./f304034210.c:		temperature=GetData();
+./f176512002.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f356947106.c:  unsigned char temperature[1];
+./f288811066.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f419775794.c:	scsi_warning_specified_temperature_exceeded		= 0x0b01,
+./f491105666.c: * omap_thermal_get_trip_value - returns trip temperature based on index
+./f491108850.c:	RF_WriteReg(dev, 0x02, 0x004d);		mdelay(1); /* temperature meter off */
+./f261484682.c:  unsigned char temperature[1];
+./f491138402.c:			printk(KERN_CRIT "CPU%d: %s temperature above threshold, cpu clock throttled (total events = %lu)\n",
+./f491138402.c:			printk(KERN_INFO "CPU%d: %s temperature/speed normal\n",
+./f491015746.c: * Set things up to use THRM1 as a temperature lower bound, and THRM2 as an upper bound.
+./f457529554.c: * @adc_batt_temp     : adc channel name for battery temperature
+./f214172578.c:  printf("temperature = ")
+./f288810770.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f491098058.c:			 * The temperature reading is in 12-bit twos
+./f293918722.c:/* actual temperature registers */
+./f293918722.c:/* temperature state registers */
+./f293918722.c: * temperature high limit registers, FSC does not document these. Proven to be
+./f293918722.c:	u8 temp_act[11];	/* temperature */
+./f184826634.c:      pConfig->hwm.hwmCurrentRaw.temperature[i] = dwValue;
+./f184826634.c:    dwValue = pConfig->hwm.hwmCurrentRaw.temperature[i];
+./f184826634.c:    if ( pConfig->hwm.hwmCurrentRaw.temperature[i] == 0 ) {
+./f184826634.c:      pConfig->hwm.hwmCurrent.temperature[i] = dwValue;
+./f184826634.c:      pConfig->hwm.hwmCurrent.temperature[i] = 0;
+./f402924146.c:/* [RO] 0=OK; 1=over temperature flag (150 C) */
+./f311500386.c:  unsigned char temperature[1];
+./f176510114.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f449095874.c:	/* This holds the current temperature in millidegree celsius */
+./f449095874.c: * to_msic_die_temp - converts adc_val to msic_die temperature
+./f449095874.c: * adc_to_temp - converts the ADC code to temperature in C
+./f449095874.c: * @tp: temperature return value
+./f449095874.c: * Linear approximation is used to covert the skin adc value into temperature.
+./f449095874.c:	/* Direct conversion for die temperature */
+./f449095874.c:	/* Linear approximation for skin temperature */
+./f449095874.c:	/* Convert temperature in celsius to milli degree celsius */
+./f449095874.c: * mid_read_temp - read sensors for temperature
+./f449095874.c: * @temp: holds the current temperature for the sensor after reading
+./f449095874.c: * temperature. The converted value is stored in temp.
+./f449095874.c:	/* Convert ADC value to temperature */
+./f449095874.c: * read_curr_temp - reads the current temperature and stores in temp
+./f449095874.c: * @temp: holds the current temperature value after reading
+./f465977682.c:	 * Read TSSI boundaries for temperature compensation from
+./f465977682.c:	 * Check if temperature compensation is supported.
+./f465977682.c:	 * calculate temperature compensation delta
+./f465977682.c:	 * input. Maybe the temperature will affect the frequency of
+./f293920770.c:	/* Set 11-bit temperature resolution */
+./f491182178.c: * Currently this function handles only temperature related
+./f491182178.c: * ASYNC events. The function decodes the temperature sensor
+./f491182178.c:				"corrective action. temperature : %d Celsius\n",
+./f491182178.c:				"0340 Adapter temperature is OK now. "
+./f491182178.c:				"temperature : %d Celsius\n",
+./f491182178.c:		/* Send temperature change event to applications */
+./f176502306.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f293931618.c:/* Sensirion SHT21 humidity and temperature sensor driver
+./f293931618.c: * @temperature: cached temperature measurement value
+./f293931618.c:	int temperature;
+./f293931618.c: * sht21_temp_ticks_to_millicelsius() - convert raw temperature ticks to
+./f293931618.c: * @ticks: temperature ticks value received from sensor
+./f293931618.c:		sht21->temperature = sht21_temp_ticks_to_millicelsius(ret);
+./f293931618.c: * sht21_show_temperature() - show temperature measurement value in sysfs
+./f293931618.c:static ssize_t sht21_show_temperature(struct device *dev,
+./f293931618.c:	return sprintf(buf, "%d\n", sht21->temperature);
+./f293931618.c:static SENSOR_DEVICE_ATTR(temp1_input, S_IRUGO, sht21_show_temperature,
+./f293931618.c:MODULE_DESCRIPTION("Sensirion SHT21 humidity and temperature sensor driver");
+./f398774338.c:  /** Processor temperature, in degrees Kelvin.  The value
+./f398774338.c:   *  that the temperature has hit an upper limit and is no longer being
+./f398774338.c:  /** Board temperature, in degrees Kelvin.  The value
+./f398774338.c:   *  that the temperature has hit an upper limit and is no longer being
+./f398774338.c:/** Offset to subtract from returned Kelvin temperature to get degrees
+./f398774338.c:/** Pseudo-temperature value indicating that the temperature has
+./f402968138.c:	scsi_warning_specified_temperature_exceeded		= 0x0b01,
+./f293920122.c: * This driver handles the LM75 and compatible digital temperature sensors.
+./f260655394.c:/* get temperature (C) */
+./f369386226.c:/* get temperature (C) */
+./f327476938.c:/* We keep a temperature history for average calculation of 180s */
+./f327476938.c:			       " temperature !\n");
+./f327476938.c:			       " immediate CPU temperature !\n");
+./f327476938.c:	 * temperature reading
+./f327476938.c:	 * We calculate a history of max temperatures and use that for the
+./f327476938.c:			       " temperature !\n");
+./f327476938.c:			       " average CPU temperature !\n");
+./f327476938.c:	/* Get diode temperature */
+./f308522850.c:static int ataPrintSCTTempHist(const ata_sct_temperature_history_table * tmh)
+./f308522850.c:    // Find range of identical temperatures
+./f308522850.c:  // Print SCT status and temperature history table
+./f308522850.c:        ata_sct_temperature_history_table tmh;
+./f308522850.c:          // Read SCT status and temperature history
+./f308522850.c:        // Set new temperature logging interval
+./f307031242.c:/// base dimension of temperature
+./f307031242.c:struct temperature_base_dimension : 
+./f307031242.c:    boost::units::base_dimension<temperature_base_dimension,-5> 
+./f307031242.c:BOOST_TYPEOF_REGISTER_TYPE(boost::units::temperature_base_dimension)
+./f307031242.c:/// dimension of temperature (Theta)
+./f307031242.c:typedef temperature_base_dimension::dimension_type temperature_dimension;
+./f256331282.c: * Read the cpu temperature.
+./f256331282.c:	 * Sometimes the temperature sensor returns 0x99, which is out of range.
+./f470036642.c:/* platform data for the DS620 temperature sensor and thermostat */
+./f307031562.c:#include <boost/units/physical_dimensions/temperature.hpp>
+./f307031562.c:                          temperature_base_dimension,-1,
+./f303493218.c:;   determines sample time which needs to be greater than 30us for temperature
+./f327476842.c:/* We keep a temperature history for average calculation of 180s */
+./f327476842.c:			       " temperature !\n");
+./f327476842.c:			       " immediate CPU temperature !\n");
+./f327476842.c:	/* We calculate a history of max temperatures and use that for the
+./f327476842.c:			       " temperature !\n");
+./f327476842.c:			       " average CPU temperature !\n");
+./f327476842.c:		/* Get CPU core temperature */
+./f327476842.c:			printk(KERN_WARNING "windfarm: CPU %d temperature "
+./f180621858.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f180628290.c:	 * 	  1 = Enable high temperature ( two times normal )
+./f457614578.c:static s8 wlc_phy_env_measure_temperature(struct brcms_phy *pi)
+./f457614578.c:	temp = wlc_phy_env_measure_temperature(pi);
+./f288798242.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f436556034.c:#define	WDIOS_TEMPPANIC		0x0004	/* Kernel panic on temperature trip */
+./f176511146.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f293931522.c:/* Table 9 from datasheet - relates temperature calculation to supply voltage */
+./f293931522.c: * @val_temp:		last temperature value read from device.
+./f293931522.c: * sht15_calc_temp() - convert the raw reading to a temperature
+./f293931522.c: * sht15_calc_humid() - using last temperature convert raw to humid
+./f293931522.c: * This is the temperature compensated version as per section 4.2 of
+./f293931522.c: * sht15_show_temp() - show temperature measurement value in sysfs
+./f293408802.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f457524354.c: * @temp:			battery pack temperature in Celcius
+./f457524354.c: * @temp:			battery pack temperature in Celcius
+./f457524354.c: * @temp_interval_chg	temperature measurement interval in s when charging
+./f457524354.c: * @temp_interval_nochg	temperature measurement interval in s when not charging
+./f457524354.c: * @temp_hysteresis	temperature hysteresis
+./f353096618.c:/* platform data for the MAX6639 temperature sensor and fan control */
+./f293907354.c:    temperature readings, which are emulated by many of the chips
+./f293919906.c: * TMU treats temperature as a mapped temperature code.
+./f293919906.c: * The temperature is converted differently depending on the calibration type.
+./f293919906.c: * Calculate a temperature value from a temperature code.
+./f293919906.c: * The unit of the temperature is degree Celsius.
+./f293919906.c:	/* Write temperature code for threshold */
+./f304054922.c:  unsigned char temperature;
+./f293409314.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f176502714.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f331694594.c:		msleep(10); /* temperature sensing */
+./f331694594.c:	/* read die current temperature */
+./f331694594.c:	/* calculate temperature compensation */
+./f331694594.c:	/* wait for die temperature stabilization */
+./f307031738.c:#include <boost/units/systems/si/temperature.hpp>
+./f307031738.c:BOOST_UNITS_PHYSICAL_CONSTANT(R,quantity<energy_over_temperature_amount>,8.314472*joules/kelvin/mole,1.5e-5*joules/kelvin/mole);
+./f307031738.c:BOOST_UNITS_PHYSICAL_CONSTANT(k_B,quantity<energy_over_temperature>,1.3806504e-23*joules/kelvin,2.4e-29*joules/kelvin);
+./f307031738.c:BOOST_UNITS_PHYSICAL_CONSTANT(sigma_SB,quantity<power_over_area_temperature_4>,5.670400e-8*watts/square_meter/pow<4>(kelvin),4.0e-13*watts/square_meter/pow<4>(kelvin));
+./f307031738.c:BOOST_UNITS_PHYSICAL_CONSTANT(c_2,quantity<length_temperature>,1.4387752e-2*meter*kelvin,2.5e-8*meter*kelvin);
+./f307031738.c:BOOST_UNITS_PHYSICAL_CONSTANT(b,quantity<length_temperature>,2.8977685e-3*meter*kelvin,5.1e-9*meter*kelvin);
+./f307031738.c:BOOST_UNITS_PHYSICAL_CONSTANT(b_prime,quantity<frequency_over_temperature>,5.878933e10*hertz/kelvin,1.0e15*hertz/kelvin);
+./f311271554.c:#include <boost/units/physical_dimensions/temperature.hpp>
+./f311271554.c:namespace temperature {
+./f311271554.c:struct celsius_base_unit : public base_unit<celsius_base_unit, temperature_dimension, -1008>
+./f311271554.c:} // namespace temperature
+./f311271554.c:BOOST_TYPEOF_REGISTER_TYPE(boost::units::temperature::celsius_base_unit)
+./f311271554.c:#include <boost/units/base_units/temperature/conversions.hpp>
+./f335959618.c:	s16 temperature;
+./f335959618.c:	s32 current_temp = state->temperature;
+./f335959618.c:static int dib0090_get_temperature(struct dib0090_state *state, enum frontend_tune_state *tune_state)
+./f335959618.c:		state->temperature = ((s16) ((val - state->adc_diff) * 180) >> 8) + 55;
+./f335959618.c:		dprintk("temperature: %d C", state->temperature - 30);
+./f335959618.c:		return dib0090_get_temperature(state, tune_state);
+./f344220130.c:#define	WDIOS_TEMPPANIC		0x0004	/* Kernel panic on temperature trip */
+./f303994922.c:  unsigned char temperature;
+./f398733354.c: * Notice in the case of cpu voltage and temperature, the default is
+./f261611866.c:  unsigned char temperature[1];
+./f293919362.c:/* temperature inputs: temp1-temp4 (nr => 0-3) */
+./f293919362.c:/* Determine 4-bit temperature offset resolution */
+./f293919362.c: * This function is common to all 4-bit temperature offsets
+./f293919362.c: * This function is common to all 4-bit temperature offsets
+./f491015266.c:		seq_printf(m,  "temperature \t: %u C (uncalibrated)\n",
+./f491015266.c:		seq_printf(m, "temperature \t: %u-%u C (uncalibrated)\n",
+./f293920594.c:	u8 sf2_points[3][4];	/* Smart FanII: Fan1,2,3 temperature points */
+./f293920594.c:/* read/write the temperature1, includes measured value and limits */
+./f293920594.c:/* read/write the temperature2-3, includes measured value and limits */
+./f293920594.c:		/* Update Smart Fan II temperature points */
+./f293923538.c:/* Texas Instruments TMP102 SMBus temperature sensor driver
+./f293923538.c:MODULE_DESCRIPTION("Texas Instruments TMP102 temperature sensor driver");
+./f293923538.c:			"to enable 3rd temperature (ADM1022 only)");
+./f293923538.c:/* for ADM1022 3rd temperature mode */
+./f402944386.c:/* get temperature (C) */
+./f491022402.c: * temperature:
+./f491022402.c: *	contains the current temperature measured by the DTS
+./f491022402.c: *	throttling begins when temperature is greater or equal to
+./f491022402.c: *	throttling is being ceased, if the temperature is lower than
+./f491022402.c: *	a reduced temperature this value should be less than throttle_begin.
+./f491022402.c:/* shows the temperature of the DTS on the PPE,
+./f491022402.c:/* shows the temperature of the second DTS on the PPE */
+./f491022402.c:static struct device_attribute attr_spu_temperature = {
+./f491022402.c:	.attr = {.name = "temperature", .mode = 0400 },
+./f491022402.c:	&attr_spu_temperature.attr,
+./f491022402.c:static struct device_attribute attr_ppe_temperature0 = {
+./f491022402.c:	.attr = {.name = "temperature0", .mode = 0400 },
+./f491022402.c:static struct device_attribute attr_ppe_temperature1 = {
+./f491022402.c:	.attr = {.name = "temperature1", .mode = 0400 },
+./f491022402.c:	&attr_ppe_temperature0.attr,
+./f491022402.c:	&attr_ppe_temperature1.attr,
+./f303996458.c:  unsigned char temperature;
+./f344221626.c:/* platform data for the MAX6639 temperature sensor and fan control */
+./f288808722.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f491393850.c: * 6. At high temperature (TA > +85°C), the digital supply current (IVD)
+./f491058106.c:  /** Processor temperature, in degrees Kelvin.  The value
+./f491058106.c:   *  that the temperature has hit an upper limit and is no longer being
+./f491058106.c:  /** Board temperature, in degrees Kelvin.  The value
+./f491058106.c:   *  that the temperature has hit an upper limit and is no longer being
+./f491058106.c:/** Offset to subtract from returned Kelvin temperature to get degrees
+./f491058106.c:/** Pseudo-temperature value indicating that the temperature has
+./f470056434.c:	scsi_warning_specified_temperature_exceeded		= 0x0b01,
+./f402935258.c:/* platform data for the MAX6639 temperature sensor and fan control */
+./f306990874.c:#include <boost/units/base_units/temperature/fahrenheit.hpp>
+./f306990874.c:typedef make_system<boost::units::temperature::fahrenheit_base_unit>::type system;
+./f306990874.c:typedef unit<temperature_dimension,system>   temperature;
+./f306990874.c:BOOST_UNITS_STATIC_CONSTANT(degree,temperature);
+./f306990874.c:BOOST_UNITS_STATIC_CONSTANT(degrees,temperature);
+./f369368458.c:#define MDIO_PMA_LASI_TX_LASERTEMPFLT	0x0100	/* Laser temperature fault */
+./f491026594.c:		pr_emerg("Ambient temperature too high reported by firmware");
+./f491098482.c: * ADT7410 digital temperature sensor driver supporting ADT7410
+./f491098482.c:static ssize_t adt7410_convert_temperature(struct adt7410_chip_info *chip,
+./f491098482.c:	return adt7410_convert_temperature(chip, data, buf);
+./f491098482.c:	return adt7410_convert_temperature(chip, data, buf);
+./f491098482.c:	/* CT critcal temperature event. line 0 */
+./f491098482.c:	/* INT bound temperature alarm event. line 1 */
+./f491098482.c:	dev_info(&client->dev, "%s temperature sensor registered.\n",
+./f491098482.c:			" temperature sensor driver");
+./f293415746.c:	 * 	  1 = Enable high temperature ( two times normal )
+./f176506002.c:	/*  Remote 1 temperature Tmin     (32C) */
+./f176506002.c:	/* Remote 2 temperature Tmin     (32C) */
+./f176506002.c:	/* remote 1 temperature offset */
+./f293921346.c: * with Overtemperature Alarm
+./f293921346.c: * It reports up to two temperatures (its own plus up to
+./f356873218.c:	/* Check battery temperature */
+./f356873218.c:		printk(KERN_WARNING "Not charging: temperature out of limits.\n");
+./f491105546.c: * omap_thermal_hotspot_temperature - returns sensor extrapolated temperature
+./f491105546.c: * @t:	omap sensor temperature
+./f491105546.c:static inline int omap_thermal_hotspot_temperature(int t, int s, int c)
+./f491105546.c:/* Get temperature callback function for thermal zone*/
+./f491105546.c:	ret = omap_bandgap_read_temperature(bg_ptr, data->sensor_id, &tmp);
+./f491105546.c:	/* TODO: Introduce pcb temperature lookup */
+./f491105546.c:	*temp = omap_thermal_hotspot_temperature(tmp, slope, constant);
+./f491105546.c:/* Get trip temperature callback functions for thermal zone */
+./f491105546.c:/* Get critical temperature callback functions for thermal zone */
+./f491105546.c:int omap_thermal_report_sensor_temperature(struct omap_bandgap *bg_ptr, int id)
+./f457545210.c: * @temp_level: Temperature level at which the temperature clipping will
+./f457545210.c: * @threshold: basic temperature for generating interrupt
+./f457545210.c: *	0: temperature for trigger_level0 interrupt
+./f457545210.c: *		current temperature > threshold + trigger_levels[0]
+./f457545210.c: *	1: temperature for trigger_level1 interrupt
+./f457545210.c: *		current temperature > threshold + trigger_levels[1]
+./f457545210.c: *	2: temperature for trigger_level2 interrupt
+./f457545210.c: *		current temperature > threshold + trigger_levels[2]
+./f457545210.c: *	3: temperature for trigger_level3 interrupt
+./f457545210.c: *		current temperature > threshold + trigger_levels[3]
+./f457545210.c: * @cal_type: calibration type for temperature
+./f189690282.c:  unsigned char temperature[1];
+./f260614618.c:  unsigned char temperature[1];
+./f176507250.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f377955410.c:			__be16  current_temperature;
+./f293922242.c: * temperatures (its own plus up to three external ones) with a 1 deg
+./f344217650.c:/* get temperature (C) */
+./f288800386.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f293920818.c:/* These are the zone temperature range encodings in .001 degree C */
+./f293920818.c: * LM85 can automatically adjust fan speeds based on temperature
+./f293920818.c: * three zones (one for each temperature input) on the lm85
+./f293920818.c:			 * Actual "max" temperature specified.  Preserved
+./f491098682.c: * I2C bus driver for ADT7316/7/8 ADT7516/7/9 digital temperature
+./f491098682.c:			"ADT7516/7/8 digital temperature sensor, ADC and DAC");
+./f340303250.c:	int last_temperature;
+./f293939970.c:	/* Read the temperature limits */
+./f293939970.c:	/* Read temperature source selection */
+./f293939970.c:	/* Update temperature */
+./f293939970.c:	/* Update dts temperature */
+./f293939970.c: * Check whether a given temperature source can ever be useful.
+./f293939970.c: * Returns the number of selectable temperature channels which are
+./f293939970.c:	/* Look-up the actual temperature channel number */
+./f293939970.c:/* Check pins that can be used for either temperature or voltage monitoring */
+./f293939970.c:	/* Check which analog temperatures and extra voltages are present */
+./f293939970.c:				 "PECI agent %d Tbase temperature: %u\n",
+./f260656346.c:	int last_temperature;
+./f432398274.c:	EFX_HWMON_TEMP,         /* temperature */
+./f432398274.c:	/* Convert temperature from degrees to milli-degrees Celsius */
+./f432398274.c:	/* Convert temperature from degrees to milli-degrees Celsius */
+./f288803186.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f491098914.c:		/* temperature in milli degrees Celsius
+./f449094802.c: * acerhdf - A driver which monitors the temperature
+./f449094802.c: * temperature of the cpu and a userspace tool may take over control of the fan.
+./f449094802.c: * CPU's optimal operating limits denoted in junction temperature as
+./f449094802.c: * assume 89°C is critical temperature.
+./f449094802.c: * Maximum interval between two temperature checks is 15 seconds, as the die
+./f449094802.c:MODULE_PARM_DESC(interval, "Polling interval of temperature check");
+./f449094802.c:MODULE_PARM_DESC(fanon, "Turn the fan on above this temperature");
+./f449094802.c:MODULE_PARM_DESC(fanoff, "Turn the fan off below this temperature");
+./f449094802.c: *		the fan speed depending on the temperature
+./f449094802.c:		pr_err("fanon temperature too high, set to %d\n",
+./f449094802.c: *          the temperature and the fan.
+./f449094802.c:				 unsigned long *temperature)
+./f449094802.c:	*temperature = ACERHDF_TEMP_CRIT;
+./f449094802.c:		pr_err("error reading temperature, hand off control to BIOS\n");
+./f449094802.c:		/* turn fan off only if below fanoff temperature */
+./f449094802.c:MODULE_DESCRIPTION("Aspire One temperature and fan driver");
+./f293937026.c: * Target temperature in thermal cruise mode, w83793 will try to turn
+./f293937026.c: * fan speed to keep the temperature of target device around this
+./f293937026.c: * temperature.
+./f293937026.c: * temperature within the tolerance range.
+./f323250706.c:All voltages, currents, charges, energies, time and temperatures in 
+./f491098818.c: * ADT7316 digital temperature sensor driver supporting ADT7316/7/8 ADT7516/7/9
+./f248186858.c:#define	WDIOS_TEMPPANIC		0x0004	/* Kernel panic on temperature trip */
+./f457547754.c:	scsi_warning_specified_temperature_exceeded		= 0x0b01,
+./f470053610.c:#define	WDIOS_TEMPPANIC		0x0004	/* Kernel panic on temperature trip */
+./f491136682.c:	 * which includes some code which overrides all temperature
+./f180628690.c: * "K8 Miscellaneous Control" and it will expose the temperature
+./f180628690.c: * Note: as only the current temperature and the trip temperature for
+./f180628690.c: * linux driver for thermal zones needs a critical temperature value, a
+./f180628690.c: * reasonable critical temperature is calculated by simply adding 6°C to
+./f180628690.c: * the trip temperature.
+./f180628690.c:	TMAX, 5, /* Maximum temperature for software thermal control, in °C, biased by 52 */
+./f180628690.c:/* Calculates temperature in tenths Kelvin from given TVAL and TFRC values */
+./f261611714.c:  unsigned char temperature[1];
+./f331696898.c: * @temperature_level:		Maximum temperature of LPDDR2 devices attached
+./f331696898.c: *				value is the maximum of the two temperature
+./f331696898.c:	u8				temperature_level;
+./f331696898.c:	seq_printf(s, "MR4=%d\n", emif->temperature_level);
+./f331696898.c: * Get the temperature level of the EMIF instance:
+./f331696898.c: * Reads the MR4 register of attached SDRAM parts to find out the temperature
+./f331696898.c: * level. If there are two parts attached(one on each CS), then the temperature
+./f331696898.c: * level for the EMIF instance is the higher of the two temperatures.
+./f331696898.c:static void get_temperature_level(struct emif_data *emif)
+./f331696898.c:	u32		temp, temperature_level;
+./f331696898.c:	temperature_level = readl(base + EMIF_LPDDR2_MODE_REG_DATA);
+./f331696898.c:	temperature_level = (temperature_level & MR4_SDRAM_REF_RATE_MASK) >>
+./f331696898.c:		temperature_level = max(temp, temperature_level);
+./f331696898.c:	if (unlikely(temperature_level < SDRAM_TEMP_NOMINAL))
+./f331696898.c:		temperature_level = SDRAM_TEMP_NOMINAL;
+./f331696898.c:	if (likely(temperature_level != SDRAM_TEMP_RESERVED_4))
+./f331696898.c:		emif->temperature_level = temperature_level;
+./f331696898.c: * Program EMIF shadow registers that are not dependent on temperature
+./f331696898.c: * setup_temperature_sensitive_regs() - set the timings for temperature
+./f331696898.c: * on the temperature at boot time and subsequently based on the temperature
+./f331696898.c: * alert interrupt. Temperature alert can happen when the temperature
+./f331696898.c:static void setup_temperature_sensitive_regs(struct emif_data *emif,
+./f331696898.c:	u32		temperature;
+./f331696898.c:	temperature = emif->temperature_level;
+./f331696898.c:	if (temperature == SDRAM_TEMP_HIGH_DERATE_REFRESH) {
+./f331696898.c:	} else if (temperature == SDRAM_TEMP_HIGH_DERATE_REFRESH_AND_TIMINGS) {
+./f331696898.c:	old_temp_level = emif->temperature_level;
+./f331696898.c:	get_temperature_level(emif);
+./f331696898.c:	if (unlikely(emif->temperature_level == old_temp_level)) {
+./f331696898.c:		dev_err(emif->dev, "temperature alert before registers are calculated, not de-rating timings\n");
+./f331696898.c:	if (emif->temperature_level < old_temp_level ||
+./f331696898.c:		emif->temperature_level == SDRAM_TEMP_VERY_HIGH_SHUTDOWN) {
+./f331696898.c:		setup_temperature_sensitive_regs(emif, emif->curr_regs);
+./f331696898.c:	 * Handle temperature alert
+./f331696898.c:	if (emif->temperature_level == SDRAM_TEMP_VERY_HIGH_SHUTDOWN) {
+./f331696898.c:		dev_emerg(emif->dev, "SDRAM temperature exceeds operating limit.. Needs shut down!!!\n");
+./f331696898.c:		setup_temperature_sensitive_regs(emif, emif->curr_regs);
+./f331696898.c:		dev_err(emif->dev, "temperature alert before registers are calculated, not de-rating timings\n");
+./f331696898.c:	/* Check temperature level temperature level*/
+./f331696898.c:	get_temperature_level(emif);
+./f331696898.c:	if (emif->temperature_level == SDRAM_TEMP_VERY_HIGH_SHUTDOWN)
+./f331696898.c:		dev_emerg(emif->dev, "SDRAM temperature exceeds operating limit.. Needs shut down!!!\n");
+./f331696898.c:	/* Init temperature polling */
+./f331696898.c:	emif->temperature_level	= SDRAM_TEMP_NOMINAL;
+./f331696898.c:	setup_temperature_sensitive_regs(emif, regs);
+./f331696898.c:	 * for temperature events. Otherwise, there could be race
+./f457617634.c: * every WLC_TEMPSENSE_PERIOD seconds temperature check to decide whether to
+./f353096586.c:/* platform data for the DS620 temperature sensor and thermostat */
+./f449056714.c:/* get temperature (C) */
+./f176499898.c:				TMP0, 8,	/* Thermal Zone 0 temperature */
+./f176499898.c:				TMP1, 8,	/* Thermal Zone 1 temperature */
+./f293919938.c: * drivers/hwmon/applesmc.c - driver for Apple's SMC (accelerometer, temperature
+./f293919938.c:	unsigned int temp_count;	/* number of temperature registers */
+./f293919938.c:	unsigned int temp_begin;	/* temperature lower index bound */
+./f293919938.c:	unsigned int temp_end;		/* temperature upper index bound */
+./f293919938.c:	unsigned int index_count;	/* size of temperature index array */
+./f293919938.c:	const char **index;		/* temperature key index */
+./f293919938.c:static ssize_t applesmc_show_temperature(struct device *dev,
+./f293919938.c:	{ "temp%d_input", applesmc_show_temperature },
+./f293919938.c:		goto out_temperature;
+./f293919938.c:out_temperature:
+./f189710986.c:  unsigned char temperature;
+./f449095522.c: * accelerometer and other data, such as the device's temperature.
+./f449095522.c:#define HDAPS_PORT_TEMP1	0x1616	/* device temperature, in Celsius */
+./f449095522.c:#define HDAPS_PORT_TEMP2	0x161b	/* device temperature (again?) */
+./f407404418.c:	{ 0x02, "DS1624 temperature sensor" },
+./f407404418.c:	{ 0x03, "DS1621 temperature sensor" },
+./f176498978.c:	/* select temperature sensor (TSS)*/
+./f293410522.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f386555482.c:  signed char hda_temp;             // 200: Current temperature in Celsius (0x80 = invalid)
+./f386555482.c:  signed char min_temp;             // 201: Minimum temperature this power cycle
+./f386555482.c:  signed char max_temp;             // 202: Maximum temperature this power cycle
+./f386555482.c:  signed char life_min_temp;        // 203: Minimum lifetime temperature
+./f386555482.c:  signed char life_max_temp;        // 204: Maximum lifetime temperature
+./f386555482.c:  unsigned char byte205;            // 205: reserved (T13/e06152r0-2: Average lifetime temperature)
+./f386555482.c:  unsigned int over_limit_count;    // 206-209: # intervals since last reset with temperature > Max Op Limit
+./f386555482.c:  unsigned int under_limit_count;   // 210-213: # intervals since last reset with temperature < Min Op Limit
+./f386555482.c:struct ata_sct_temperature_history_table
+./f386555482.c:  signed char max_op_limit;         // 6: Maximum recommended continuous operating temperature
+./f386555482.c:  signed char over_limit;           // 7: Maximum temperature limit
+./f386555482.c:  signed char under_limit;          // 9: Minimum temperature limit
+./f386555482.c:  signed char cb[478];              // 34-(34+cb_size-1): Circular buffer of temperature values
+./f386555482.c:ASSERT_SIZEOF_STRUCT(ata_sct_temperature_history_table, 512);
+./f386555482.c:int ataReadSCTTempHist(ata_device * device, ata_sct_temperature_history_table * tmh,
+./f386555482.c:// Set SCT temperature logging interval
+./f386555482.c:unsigned char ata_return_temperature_value(const ata_smart_values * data, const ata_vendor_attr_defs & defs);
+./f189247378.c:;   Description: Set ADC10 and the integrated temperature sensor to detect
+./f189247378.c:;   temperature gradients. The temperature sensor output voltage is sampled
+./f189247378.c:;   30us for temperature sensor.
+./f288804874.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f340026410.c:/* [RO] 0=OK; 1=over temperature flag (150 C) */
+./f327476810.c:/* This currently only exports the external temperature sensor,
+./f327476810.c:	 * We only expose the external temperature register for
+./f193426458.c:    "halted due to temperature out of range",
+./f293920714.c: * by Winbond. It reports a single external temperature with a 1 deg
+./f260614138.c:  unsigned char temperature[1];
+./f419773506.c: * ixgbe_check_overtemp_subtask - check for over temperature
+./f180623066.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f394555106.c:	" -H   Read temperature from drive (Hitachi only)\n"
+./f394555106.c:			printf(" drive temperature (celsius) is:  ");
+./f394555106.c:			printf("\n drive temperature in range:  %s\n", YN(!(args[1]&0x10)) );
+./f308524058.c:    "halted due to temperature out of range",
+./f432396994.c:		       "Device temperature %d degrees C exceeds"
+./f432396994.c:			       "Device temperature %d degrees C "
+./f432396994.c:			       "Device temperature is now %d degrees C"
+./f293923586.c: * Driver for the Texas Instruments TMP401 SMBUS temperature sensor IC.
+./f293923586.c: * Resets the historical measurements of minimum and maximum temperatures.
+./f293923586.c: * temperature measured since power-on, chip-reset, or
+./f293923586.c:MODULE_DESCRIPTION("Texas Instruments TMP401 temperature sensor driver");
+./f293921090.c: * A hwmon driver for the IBM PowerExecutive temperature/power sensors
+./f293921090.c:MODULE_DESCRIPTION("IBM PowerExecutive power/temperature sensor driver");
+./f193425738.c:  signed char hda_temp;             // 200: Current temperature in Celsius (0x80 = invalid)
+./f193425738.c:  signed char min_temp;             // 201: Minimum temperature this power cycle
+./f193425738.c:  signed char max_temp;             // 202: Maximum temperature this power cycle
+./f193425738.c:  signed char life_min_temp;        // 203: Minimum lifetime temperature
+./f193425738.c:  signed char life_max_temp;        // 204: Maximum lifetime temperature
+./f193425738.c:  unsigned char byte205;            // 205: reserved (T13/e06152r0-2: Average lifetime temperature)
+./f193425738.c:  unsigned int over_limit_count;    // 206-209: # intervals since last reset with temperature > Max Op Limit
+./f193425738.c:  unsigned int under_limit_count;   // 210-213: # intervals since last reset with temperature < Min Op Limit
+./f193425738.c:struct ata_sct_temperature_history_table
+./f193425738.c:  signed char max_op_limit;         // 6: Maximum recommended continuous operating temperature
+./f193425738.c:  signed char over_limit;           // 7: Maximum temperature limit
+./f193425738.c:  signed char under_limit;          // 9: Minimum temperature limit
+./f193425738.c:  signed char cb[478];              // 34-(34+cb_size-1): Circular buffer of temperature values
+./f193425738.c:ASSERT_SIZEOF_STRUCT(ata_sct_temperature_history_table, 512);
+./f193425738.c:int ataReadSCTTempHist(ata_device * device, ata_sct_temperature_history_table * tmh,
+./f193425738.c:// Set SCT temperature logging interval
+./f193425738.c:unsigned char ata_return_temperature_value(const ata_smart_values * data, const ata_vendor_attr_defs & defs);
+./f491105570.c: * OMAP4 Bandgap temperature sensor driver
+./f491105570.c:/* Offsets from the base of temperature sensor registers */
+./f491105570.c: * The thresholds and limits for temperature sensors.
+./f491105570.c: * @fclock: pointer to functional clock of temperature sensor
+./f491105570.c: * @div_clk: pointer to parent clock of temperature sensor fclk
+./f491105570.c: * @conv_table: Pointer to adc to temperature conversion table
+./f491105570.c: * struct temp_sensor_regval - temperature sensor register values
+./f491105570.c: * struct omap_temp_sensor - bandgap temperature sensor platform data
+./f491105570.c: * @ts_data: pointer to struct with thresholds, limits of temperature sensor
+./f491105570.c: * @regval: temperature sensor register values
+./f491105570.c: * @conv_table: Pointer to adc to temperature conversion table
+./f491105570.c: * @sensor_count: count of temperature sensor device in scm
+./f491105570.c:	int (*report_temperature)(struct omap_bandgap *bg_ptr, int id);
+./f491105570.c:int omap_bandgap_read_temperature(struct omap_bandgap *bg_ptr, int id,
+./f491105570.c:				  int *temperature);
+./f260659786.c:/* platform data for the MAX6639 temperature sensor and fan control */
+./f243938442.c:#define MDIO_PMA_LASI_TX_LASERTEMPFLT	0x0100	/* Laser temperature fault */
+./f261833034.c:  unsigned char temperature[1];
+./f288812098.c:struct temperature {
+./f288812098.c:struct temperature temperatures[] = {
+./f288812098.c:	int cpufan_temperature = 0, sysfan_temperature = 0;
+./f288812098.c:	//if (get_option(&cpufan_temperature, "cpufan_temperature") < 0)
+./f288812098.c:	//	cpufan_temperature = FAN_TEMPERATURE_30DEGC;
+./f288812098.c:	//if (get_option(&sysfan_temperature, "sysfan_temperature") < 0)
+./f288812098.c:	//	sysfan_temperature = FAN_TEMPERATURE_30DEGC;
+./f288812098.c:	hwm_write(0x54, 0xf1); // SYSTIN temperature offset
+./f288812098.c:	hwm_write(0x55, 0x19); // CPUTIN temperature offset
+./f288812098.c:	hwm_write(0x56, 0xfc); // AUXTIN temperature offset
+./f288812098.c:				temperatures[cpufan_temperature].deg_celsius,
+./f288812098.c:				temperatures[cpufan_temperature].deg_fahrenheit);
+./f288812098.c:		hwm_write(0x06, temperatures[cpufan_temperature].deg_celsius);  // CPUFANIN target temperature
+./f288812098.c:				temperatures[sysfan_temperature].deg_celsius,
+./f288812098.c:				temperatures[sysfan_temperature].deg_fahrenheit);
+./f288812098.c:		hwm_write(0x05, temperatures[sysfan_temperature].deg_celsius); // SYSFANIN target temperature
+./f457524434.c: * temperature. Different phone manufactures uses different techniques to both
+./f457524434.c: * identify the battery and to read its temperature.
+./f457524434.c: * @temp:			battery pack temperature in Celcius
+./f457524434.c: * @batres_tbl			battery internal resistance vs temperature table
+./f457524434.c: * @temp_now		present battery temperature
+./f457524434.c: * @temp_interval_chg	temperature measurement interval in s when charging
+./f457524434.c: * @temp_interval_nochg	temperature measurement interval in s when not charging
+./f457524434.c: * @temp_hysteresis	temperature hysteresis
+./f176504738.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f457614850.c:	s32 received_power, temperature;
+./f457614850.c:	temperature = pi_lcn->lcnphy_lastsensed_temperature;
+./f457614850.c:	if ((temperature - 15) < -30)
+./f457614850.c:			(((temperature - 10 - 25) * 286) >> 12) -
+./f457614850.c:	else if ((temperature - 15) < 4)
+./f457614850.c:			(((temperature - 10 - 25) * 286) >> 12) -
+./f457614850.c:					(((temperature - 10 - 25) * 286) >> 12);
+./f491099530.c:		/* currently only temperature */
+./f193425250.c:static int ataPrintSCTTempHist(const ata_sct_temperature_history_table * tmh)
+./f193425250.c:    // Find range of identical temperatures
+./f193425250.c:  // Print SCT status and temperature history table
+./f193425250.c:        ata_sct_temperature_history_table tmh;
+./f193425250.c:          // Read SCT status and temperature history
+./f193425250.c:        // Set new temperature logging interval
+./f491098434.c: * ADT7310 digital temperature sensor driver supporting ADT7310
+./f491098434.c:static ssize_t adt7310_convert_temperature(struct adt7310_chip_info *chip,
+./f491098434.c:	return adt7310_convert_temperature(chip, data, buf);
+./f491098434.c:	return adt7310_convert_temperature(chip, data, buf);
+./f491098434.c:	/* CT critcal temperature event. line 0 */
+./f491098434.c:	/* INT bound temperature alarm event. line 1 */
+./f491098434.c:	dev_info(&spi_dev->dev, "%s temperature sensor registered.\n",
+./f491098434.c:			" temperature sensor driver");
+./f491097802.c:		else /* temperature */
+./f491097802.c: * sca3000_read_temp() sysfs interface to get the temperature when available
+./f293923698.c:MODULE_PARM_DESC(int_mode, "Force the temperature interrupt mode");
+./f293923698.c: * 0  0  : pwm1/2 off temperature        (pwm_auto_temp[0])
+./f293923698.c: * 0  1  : pwm1/2 low speed temperature  (pwm_auto_temp[1])
+./f293923698.c: * 0  2  : pwm1/2 high speed temperature (pwm_auto_temp[2])
+./f293923698.c: * 0  3  : pwm1/2 full speed temperature (pwm_auto_temp[3])
+./f293923698.c: * 1  0  : pwm1/2 off temperature        (pwm_auto_temp[0])
+./f293923698.c: * 1  1  : pwm1/2 low speed temperature  (pwm_auto_temp[1])
+./f293923698.c: * 1  2  : pwm1/2 high speed temperature (pwm_auto_temp[2])
+./f293923698.c: * 1  3  : pwm1/2 full speed temperature (pwm_auto_temp[3])
+./f470040754.c:#define MDIO_PMA_LASI_TX_LASERTEMPFLT	0x0100	/* Laser temperature fault */
+./f298597130.c:      pConfig->hwm.hwmCurrentRaw.temperature[i] = dwValue;
+./f298597130.c:    dwValue = pConfig->hwm.hwmCurrentRaw.temperature[i];
+./f298597130.c:    if ( pConfig->hwm.hwmCurrentRaw.temperature[i] == 0 ) {
+./f298597130.c:      pConfig->hwm.hwmCurrent.temperature[i] = dwValue;
+./f298597130.c:      pConfig->hwm.hwmCurrent.temperature[i] = 0;
+./f293925098.c:		/* 4 temperature inputs, 4 fan inputs */
+./f491178314.c: * lpfc_temp_sensor_show - Return the temperature sensor level
+./f491178314.c: * Returns a number indicating the temperature sensor level currently
+./f336315298.c:  printf("temperature = ")
+./f491180858.c:	unsigned long temperature;
+./f491180858.c:		temperature = readl(phba->MBslimaddr + TEMPERATURE_OFFSET);
+./f491180858.c:		temp_event_data.data = (uint32_t)temperature;
+./f491180858.c:				"0406 Adapter maximum temperature exceeded "
+./f491180858.c:				temperature, phba->work_hs,
+./f491180858.c:				"2889 Port Overtemperature event, "
+./f293922690.c:"*1: Forcibly enable internal voltage and temperature channels, except in9\n"
+./f293922690.c:" 2: Forcibly enable all voltage and temperature channels, except in9\n"
+./f293922690.c:" 3: Forcibly enable all voltage and temperature channels, including in9");
+./f293922690.c:#define TMS	0x0e	/* Logical device: temperatures */
+./f293922690.c:						"temperature monitoring\n");
+./f293922690.c: * bank is for voltages and temperatures only
+./f293922690.c:			/* Forcibly enable temperature channel */
+./f284690274.c:  unsigned char temperature;
+./f261484650.c:  unsigned char temperature[1];
+./f180857090.c:#define CSR_PSKEY_TEMPERATURE_CALIBRATION			0x03db	/* temperature_calibration */
+./f180857090.c:#define CSR_PSKEY_TEMPERATURE_VS_DELTA_INTERNAL_PA		0x03da	/* temperature_calibration[] */
+./f180857090.c:#define CSR_PSKEY_TEMPERATURE_VS_DELTA_TX_PRE_LVL		0x03d9	/* temperature_calibration[] */
+./f180857090.c:#define CSR_PSKEY_TEMPERATURE_VS_DELTA_TX_BB			0x03d8	/* temperature_calibration[] */
+./f180857090.c:#define CSR_PSKEY_TEMPERATURE_VS_DELTA_ANA_FTRIM		0x03d7	/* temperature_calibration[] */
+./f180857090.c:#define CSR_PSKEY_TEMPERATURE_VS_DELTA_INTERNAL_PA_CLASS1	0x03ae	/* temperature_calibration[] */
+./f180857090.c:#define CSR_PSKEY_TEMPERATURE_VS_DELTA_EXTERNAL_PA_CLASS1	0x03ad	/* temperature_calibration[] */
+./f180857090.c:#define CSR_PSKEY_TEMPERATURE_VS_DELTA_TX_PRE_LVL_MR		0x03ac	/* temperature_calibration[] */
+./f180857090.c:#define CSR_PSKEY_TEMPERATURE_VS_DELTA_TX_BB_MR_HEADER		0x03ab	/* temperature_calibration[] */
+./f180857090.c:#define CSR_PSKEY_TEMPERATURE_VS_DELTA_TX_BB_MR_PAYLOAD		0x03aa	/* temperature_calibration[] */
+./f293410162.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f302450074.c:#define	WDIOS_TEMPPANIC		0x0004	/* Kernel panic on temperature trip */
+./f491153058.c: * environmental control devices such as fans and temperature sensors.
+./f415534618.c: * Notice in the case of cpu voltage and temperature, the default is
+./f288815018.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f491139362.c:	"ts",	/* temperature sensor */
+./f288798650.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */
+./f340239106.c:		dev_dbg(&client->dev, "Over temperature fault\n");
+./f369388186.c:	int last_temperature;
+./f335982194.c:/* [RO] 0=OK; 1=over temperature flag (150 C) */
+./f213226434.c:  unsigned char temperature[1];
+./f289785706.c:/* get temperature (C) */
+./f279998066.c:float temperature=0;
+./f279998066.c:        temperature=GetData();
+./f279998066.c:	sprintf(buffer,"%f",temperature);
+./f293940098.c:/* for 8-bit temperature hyst and over registers */
+./f293940098.c:/* for 10-bit temperature readings */
+./f293940098.c:/* 3 temperatures */
+./f176515130.c:				/* only the two MSBs in the external temperature low byte are used, resolution 0.25. We ignore it */

@@ -1,0 +1,24 @@
+ifeq ("$(origin MSP_GDBPROXY)","undefined")
+MSP_GDBPROXY	= localhost:3333
+endif
+
+gdbinit:
+	@echo "set remoteaddresssize 64" >.gdbinit
+	@echo "set remotetimeout 999999" >>.gdbinit
+	@echo "target remote $(MSP_GDBPROXY)" >>.gdbinit
+
+gdbinit_load:	gdbinit
+	@echo "monitor erase" >>.gdbinit
+	@echo "load" >>.gdbinit
+
+debug:  $(BASENAME).elf gdbinit_load
+	echo "break main" >>.gdbinit
+	$(CCPREFIX)gdb $(BASENAME).elf
+
+run:  $(BASENAME).elf gdbinit_load
+	echo "cont" >>.gdbinit
+	$(CCPREFIX)gdb $(BASENAME).elf
+
+xdebug:  $(BASENAME).elf gdbinit_load
+	echo "break main" >>.gdbinit
+	ddd --debugger $(CCPREFIX)gdb $(BASENAME).elf &

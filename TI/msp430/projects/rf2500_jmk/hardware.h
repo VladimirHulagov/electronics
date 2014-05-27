@@ -1,0 +1,36 @@
+
+#define	BN_P1_LEDRED	0
+#define	BN_P1_LEDGREEN	1
+#define	BN_P1_NSWITCH	2
+
+#define	BN_P2_CC2500_GDO2	7
+#define	BN_P2_CC2500_GDO0	6
+
+#define	BN_P3_CC2500_CSN	0
+#define	BN_P3_CC2500_MOSI		1
+#define	BN_P3_CC2500_MISO		2
+#define	BN_P3_CC2500_CLK	3
+#define	BN_P3_TXD0		4
+#define	BN_P3_RXD0		5
+
+#define	BM_P1_DEFDIR	(1<<BN_P1_LEDRED|1<<BN_P1_LEDGREEN)
+#define	BM_P1_DEFSTATE	(0)
+#define	BM_P1_DEFPULLUP	(1<<BN_P1_NSWITCH)
+#define	BM_P1_DEFPULLDOWN	(0)
+
+#define	BM_P2_DEFDIR	(0)
+#define	BM_P2_DEFSTATE	(0)
+#define	BM_P2_DEFPULLUP	(0)
+#define	BM_P2_DEFPULLDOWN	(0)
+
+#define	BM_P3_DEFDIR	(1<<BN_P3_CC2500_CSN|1<<BN_P3_CC2500_MOSI|1<<BN_P3_CC2500_CLK|1<<BN_P3_TXD0)
+#define	BM_P3_DEFSTATE	(1<<BN_P3_CC2500_CSN|1<<BN_P3_TXD0)
+
+
+#define	LED_RED_SET(enable)	(enable)?(P1OUT|=1<<BN_P1_LEDRED):(P1OUT&=~(1<<BN_P1_LEDRED))
+#define	LED_GREEN_SET(enable)	(enable)?(P1OUT|=1<<BN_P1_LEDGREEN):(P1OUT&=~(1<<BN_P1_LEDGREEN))
+
+#define	LED_RED_TOGGLE()	P1OUT^=1<<BN_P1_LEDRED
+#define	LED_GREEN_TOGGLE()	P1OUT^=1<<BN_P1_LEDGREEN
+
+#define	RADIO_CS_SET(enable)	do { if (enable) P3OUT&=~(1<<BN_P3_CC2500_CSN); else P3OUT|=1<<BN_P3_CC2500_CSN; } while(0)

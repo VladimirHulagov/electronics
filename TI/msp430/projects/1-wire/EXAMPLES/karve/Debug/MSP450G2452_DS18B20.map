@@ -1,0 +1,339 @@
+******************************************************************************
+       MSP430 Evaluation Linker PC v3.3.2                      
+******************************************************************************
+>> Linked Wed Jun 27 23:15:01 2012
+
+OUTPUT FILE NAME:   <MSP450G2452_DS18B20.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 0000e2fe
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  SFR                   00000000   00000010  00000000  00000010  RWIX
+  PERIPHERALS_8BIT      00000010   000000f0  00000000  000000f0  RWIX
+  PERIPHERALS_16BIT     00000100   00000100  00000000  00000100  RWIX
+  RAM                   00000200   00000100  0000005c  000000a4  RWIX
+  INFOD                 00001000   00000040  00000000  00000040  RWIX
+  INFOC                 00001040   00000040  00000000  00000040  RWIX
+  INFOB                 00001080   00000040  00000000  00000040  RWIX
+  INFOA                 000010c0   00000040  00000000  00000040  RWIX
+  FLASH                 0000e000   00001fe0  000003de  00001c02  RWIX
+  INT00                 0000ffe0   00000002  00000000  00000002  RWIX
+  INT01                 0000ffe2   00000002  00000000  00000002  RWIX
+  INT02                 0000ffe4   00000002  00000000  00000002  RWIX
+  INT03                 0000ffe6   00000002  00000000  00000002  RWIX
+  INT04                 0000ffe8   00000002  00000000  00000002  RWIX
+  INT05                 0000ffea   00000002  00000000  00000002  RWIX
+  INT06                 0000ffec   00000002  00000000  00000002  RWIX
+  INT07                 0000ffee   00000002  00000000  00000002  RWIX
+  INT08                 0000fff0   00000002  00000000  00000002  RWIX
+  INT09                 0000fff2   00000002  00000000  00000002  RWIX
+  INT10                 0000fff4   00000002  00000000  00000002  RWIX
+  INT11                 0000fff6   00000002  00000000  00000002  RWIX
+  INT12                 0000fff8   00000002  00000000  00000002  RWIX
+  INT13                 0000fffa   00000002  00000000  00000002  RWIX
+  INT14                 0000fffc   00000002  00000000  00000002  RWIX
+  RESET                 0000fffe   00000002  00000002  00000000  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.pinit     0    0000e000    00000000     UNINITIALIZED
+
+.bss       0    00000200    0000000c     UNINITIALIZED
+                  00000200    00000004     main.obj (.bss)
+                  00000204    00000004     rts430.lib : _lock.obj (.bss)
+                  00000208    00000004                : boot.obj (.bss)
+
+.stack     0    000002b0    00000050     UNINITIALIZED
+                  000002b0    00000002     rts430.lib : boot.obj (.stack)
+                  000002b2    0000004e     --HOLE--
+
+.text      0    0000e000    000003d4     
+                  0000e000    000000c2     rts430.lib : fs_mpy.obj (.text)
+                  0000e0c2    00000080     ds18x20.obj (.text:GetData)
+                  0000e142    00000046     rts430.lib : autoinit.obj (.text:_auto_init)
+                  0000e188    0000003e     ds18x20.obj (.text:ReadDS1820)
+                  0000e1c6    0000003c     ds18x20.obj (.text:WriteDS1820)
+                  0000e202    0000003a     ds18x20.obj (.text:ReadBit)
+                  0000e23c    00000038     main.obj (.text:main)
+                  0000e274    00000032     ds18x20.obj (.text:ResetDS1820)
+                  0000e2a6    0000002e     ishan.obj (.text:delay_ms)
+                  0000e2d4    0000002a     ishan.obj (.text:delay_us)
+                  0000e2fe    00000026     rts430.lib : boot.obj (.text:_c_int00_noexit)
+                  0000e324    00000024                : fs_utof.obj (.text)
+                  0000e348    00000022     ds18x20.obj (.text:WriteOne)
+                  0000e36a    0000001a     ds18x20.obj (.text:WriteZero)
+                  0000e384    00000016     ds18x20.obj (.text:InitDS18B20)
+                  0000e39a    00000012     rts430.lib : memcpy.obj (.text:memcpy)
+                  0000e3ac    00000010                : epilog.obj (.text)
+                  0000e3bc    0000000e     ds18x20.obj (.text:DS1820_LO)
+                  0000e3ca    00000004     rts430.lib : pre_init.obj (.text:_system_pre_init)
+                  0000e3ce    00000004                : exit.obj (.text:abort)
+                  0000e3d2    00000002                : _lock.obj (.text:_nop)
+
+.cinit     0    0000e3d4    0000000a     
+                  0000e3d4    00000008     main.obj (.cinit)
+                  0000e3dc    00000002     --HOLE-- [fill = 0]
+
+.reset     0    0000fffe    00000002     
+                  0000fffe    00000002     rts430.lib : boot.obj (.reset)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00000200   .bss
+0000e000   .text
+0000004a   ADC10AE0
+000001b0   ADC10CTL0
+000001b2   ADC10CTL1
+00000048   ADC10DTC0
+00000049   ADC10DTC1
+000001b4   ADC10MEM
+000001bc   ADC10SA
+00000057   BCSCTL1
+00000058   BCSCTL2
+00000053   BCSCTL3
+0000e3ce   C$$EXIT
+00000059   CACTL1
+0000005a   CACTL2
+000010fb   CALBC1_12MHZ
+000010f9   CALBC1_16MHZ
+000010ff   CALBC1_1MHZ
+000010fd   CALBC1_8MHZ
+000010fa   CALDCO_12MHZ
+000010f8   CALDCO_16MHZ
+000010fe   CALDCO_1MHZ
+000010fc   CALDCO_8MHZ
+0000005b   CAPD
+00000056   DCOCTL
+0000e3bc   DS1820_LO
+00000128   FCTL1
+0000012a   FCTL2
+0000012c   FCTL3
+0000e0c2   GetData
+00000000   IE1
+00000002   IFG1
+0000e384   InitDS18B20
+00000022   P1DIR
+00000025   P1IE
+00000024   P1IES
+00000023   P1IFG
+00000020   P1IN
+00000021   P1OUT
+00000027   P1REN
+00000026   P1SEL
+00000041   P1SEL2
+0000002a   P2DIR
+0000002d   P2IE
+0000002c   P2IES
+0000002b   P2IFG
+00000028   P2IN
+00000029   P2OUT
+0000002f   P2REN
+0000002e   P2SEL
+00000042   P2SEL2
+0000e202   ReadBit
+0000e188   ReadDS1820
+0000e274   ResetDS1820
+00000172   TA0CCR0
+00000174   TA0CCR1
+00000176   TA0CCR2
+00000162   TA0CCTL0
+00000164   TA0CCTL1
+00000166   TA0CCTL2
+00000160   TA0CTL
+0000012e   TA0IV
+00000170   TA0R
+0000007a   USICCTL
+0000007a   USICKCTL
+0000007b   USICNT
+00000078   USICTL
+00000078   USICTL0
+00000079   USICTL1
+0000007c   USISR
+0000007d   USISRH
+0000007c   USISRL
+00000120   WDTCTL
+0000e1c6   WriteDS1820
+0000e348   WriteOne
+0000e36a   WriteZero
+00000300   __STACK_END
+00000050   __STACK_SIZE
+00000001   __TI_args_main
+00000001   __TI_auto_init
+00000001   __TI_exit
+ffffffff   __binit__
+00000200   __bss__
+ffffffff   __c_args__
+0000e3d4   __cinit__
+0000020c   __end__
+0000e3d4   __etext__
+0000e000   __fs_mpy
+0000e324   __fs_utof
+ffffffff   __pinit__
+0000e000   __text__
+0000e142   _auto_init
+0000e2fe   _c_int00
+0000e2fe   _c_int00_noexit
+00000208   _cleanup_ptr
+0000020a   _dtors_ptr
+00000204   _lock
+0000e3d2   _nop
+0000fffe   _reset_vector
+000002b0   _stack
+0000e3ca   _system_pre_init
+00000206   _unlock
+0000e3ce   abort
+ffffffff   binit
+0000e3d4   cinit
+0000e2a6   delay_ms
+0000e2d4   delay_us
+0000020c   end
+0000e3d4   etext
+0000e3b8   func_epilog_1
+0000e3b6   func_epilog_2
+0000e3b4   func_epilog_3
+0000e3b2   func_epilog_4
+0000e3b0   func_epilog_5
+0000e3ae   func_epilog_6
+0000e3ac   func_epilog_7
+0000e23c   main
+0000e39a   memcpy
+ffffffff   pinit
+00000200   temperature
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000000   IE1
+00000001   __TI_args_main
+00000001   __TI_auto_init
+00000001   __TI_exit
+00000002   IFG1
+00000020   P1IN
+00000021   P1OUT
+00000022   P1DIR
+00000023   P1IFG
+00000024   P1IES
+00000025   P1IE
+00000026   P1SEL
+00000027   P1REN
+00000028   P2IN
+00000029   P2OUT
+0000002a   P2DIR
+0000002b   P2IFG
+0000002c   P2IES
+0000002d   P2IE
+0000002e   P2SEL
+0000002f   P2REN
+00000041   P1SEL2
+00000042   P2SEL2
+00000048   ADC10DTC0
+00000049   ADC10DTC1
+0000004a   ADC10AE0
+00000050   __STACK_SIZE
+00000053   BCSCTL3
+00000056   DCOCTL
+00000057   BCSCTL1
+00000058   BCSCTL2
+00000059   CACTL1
+0000005a   CACTL2
+0000005b   CAPD
+00000078   USICTL
+00000078   USICTL0
+00000079   USICTL1
+0000007a   USICCTL
+0000007a   USICKCTL
+0000007b   USICNT
+0000007c   USISR
+0000007c   USISRL
+0000007d   USISRH
+00000120   WDTCTL
+00000128   FCTL1
+0000012a   FCTL2
+0000012c   FCTL3
+0000012e   TA0IV
+00000160   TA0CTL
+00000162   TA0CCTL0
+00000164   TA0CCTL1
+00000166   TA0CCTL2
+00000170   TA0R
+00000172   TA0CCR0
+00000174   TA0CCR1
+00000176   TA0CCR2
+000001b0   ADC10CTL0
+000001b2   ADC10CTL1
+000001b4   ADC10MEM
+000001bc   ADC10SA
+00000200   .bss
+00000200   __bss__
+00000200   temperature
+00000204   _lock
+00000206   _unlock
+00000208   _cleanup_ptr
+0000020a   _dtors_ptr
+0000020c   __end__
+0000020c   end
+000002b0   _stack
+00000300   __STACK_END
+000010f8   CALDCO_16MHZ
+000010f9   CALBC1_16MHZ
+000010fa   CALDCO_12MHZ
+000010fb   CALBC1_12MHZ
+000010fc   CALDCO_8MHZ
+000010fd   CALBC1_8MHZ
+000010fe   CALDCO_1MHZ
+000010ff   CALBC1_1MHZ
+0000e000   .text
+0000e000   __fs_mpy
+0000e000   __text__
+0000e0c2   GetData
+0000e142   _auto_init
+0000e188   ReadDS1820
+0000e1c6   WriteDS1820
+0000e202   ReadBit
+0000e23c   main
+0000e274   ResetDS1820
+0000e2a6   delay_ms
+0000e2d4   delay_us
+0000e2fe   _c_int00
+0000e2fe   _c_int00_noexit
+0000e324   __fs_utof
+0000e348   WriteOne
+0000e36a   WriteZero
+0000e384   InitDS18B20
+0000e39a   memcpy
+0000e3ac   func_epilog_7
+0000e3ae   func_epilog_6
+0000e3b0   func_epilog_5
+0000e3b2   func_epilog_4
+0000e3b4   func_epilog_3
+0000e3b6   func_epilog_2
+0000e3b8   func_epilog_1
+0000e3bc   DS1820_LO
+0000e3ca   _system_pre_init
+0000e3ce   C$$EXIT
+0000e3ce   abort
+0000e3d2   _nop
+0000e3d4   __cinit__
+0000e3d4   __etext__
+0000e3d4   cinit
+0000e3d4   etext
+0000fffe   _reset_vector
+ffffffff   __binit__
+ffffffff   __c_args__
+ffffffff   __pinit__
+ffffffff   binit
+ffffffff   pinit
+
+[120 symbols]

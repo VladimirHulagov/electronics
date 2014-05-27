@@ -1,0 +1,11 @@
+.*?\.bin
+.*?\.elf
+.*?\.hex
+.*?\.lst
+.*?\.o
+.*?\.map
+.*?\.srec
+Debug
+\.settings
+\.cproject
+\.project

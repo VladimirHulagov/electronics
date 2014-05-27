@@ -1,0 +1,28 @@
+#!/bin/bash
+#
+#
+#(( $EUID != 0 )) && {
+#    echo "ERROR: You must be root to run this script."
+#    exit 1
+#}
+
+#DIR=$(ls -t *.c)
+#SRCS=(${DIR})
+#NUM=`find . -name *.c|wc -l`
+
+#if [ "$NUM" -gt 1 ] then
+#	echo -n "Найдены более одного файла исходного кода:$SRCS"
+#	read item
+#	case "$item" in
+#		1) echo ""
+
+SRC="main"
+MCU="msp430g2553"
+
+msp430-gcc -Os -mmcu=$MCU -o $SRCS.elf $SRCS.c
+#msp430-objdump -DS $PRG.elf > $PRG.lst
+#msp430-objdump -h $PRG.elf
+#msp430-size $PRG.elf
+#$GCCBIN/msp430-objcopy -O ihex $PRG.elf $PRG.hex
+
+mspdebug rf2500 "prog $SRCS.elf"
